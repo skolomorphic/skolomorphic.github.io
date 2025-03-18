@@ -1,0 +1,51 @@
+---
+import ChapterNav from "./ChapterNav.astro";
+import Comments from "./Comments.astro";
+const { frontmatter, chapter, size, indexonly } = Astro.props;
+const date = new Date(frontmatter.lastEdit).toLocaleDateString().replaceAll('/', '.');
+---
+<div class="post-matter">
+    { frontmatter.lastEdit && 
+        <p class="last-edit"><span class="label">Last Updated:</span> {date}</p>
+    }
+    { frontmatter.characters && 
+        <p><span class="label">Tags:</span> 
+            {frontmatter.characters.map((character: any) => 
+                <span class="tag">{character}</span> 
+            )}
+        </p>
+    }
+</div>
+{ chapter != null && chapter >=0 && <ChapterNav chapter={chapter} size={size} isIndexOnly={indexonly} /> }
+<Comments />
+<style>
+.post-matter {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+}
+.last-edit {
+    text-align: right;
+    font-style: italic;
+    background-color: var(--accent-light);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.label {
+    font-family: 'Source Code Pro';
+    font-weight: 700;
+}
+.tag {
+    display: inline-block;
+    padding: 3px;
+    margin: 3px;
+    border: 1px solid var(--accent-dark);
+    border-radius: 2px;
+    box-shadow: 5px 5px var(--accent-dark);
+    color: var(--accent-dark);
+}
+.tag:hover {
+    background-color: var(--accent-dark);
+    color: var(--accent-light);
+    box-shadow: 5px 5px var(--accent-light);
+}
+</style>

@@ -1,0 +1,156 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    background: url('../resources/topography.png') repeat;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.flex-side {
+    order: 2;
+    flex: none;
+}
+
+.flex-mainbody {
+    order: 1;
+    flex: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Astloch', system-ui;
+    font-weight: 700;
+}
+
+.splash-header {
+    font-family: 'Astloch', system-ui;
+    font-weight: 700;
+    text-decoration: underline var(--accent-midtone) wavy;
+    font-size: 5rem;
+    color: var(--accent-contrast-light);
+}
+
+.splash-header::before {
+    content: ' ⟢ ';
+}
+
+.splash-header::after {
+    content: ' ⟣ ';
+}
+
+.splash-header::before, .splash-header::after {
+    color: var(--accent-midtone);
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.insect-deco {
+    font-size: 5rem; font-weight: normal;
+    line-height: 0.5rem;
+    margin: 0;
+    color: var(--accent-midtone);
+}
+
+.navlinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks li a, .navlinks li a:visited {
+    display: block;
+    text-decoration: none;
+    background-color: var(--accent-dark);
+    color: var(--accent-light);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 100%;
+    transition: all ease-in-out 0.5s;
+}
+
+.navlinks li a:hover, .navlinks li a:active {
+    text-decoration: none;
+    background-color: var(--accent-contrast-light);
+    color: var(--accent-contrast-dark);
+    transition: all ease-in-out 0.2s;
+}
+
+.navlinks a::before {
+    content: '𓆦';
+    display: inline-block;
+    margin-right: 5px;
+    transition: all ease-in-out 0.2s;
+}
+
+.navlinks a:hover::before {
+    content: '𓆦';
+    display: inline-block;
+    margin-right: 5px;
+    transform: rotate(90deg);
+    transition: all ease-in-out 0.2s;
+}
+
+/* Box */ 
+
+#observation-jar {
+    position: relative;
+    /*height: 300px;*/
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--body-bg);
+    box-shadow: 10px 10px var(--accent-midtone);
+}
+
+/* #observation-jar:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    width: calc(100% + 60px);
+    height: 100%;
+    border-top: 2px solid var(--accent-dark);
+    border-bottom: 2px solid var(--accent-dark);
+}
+
+#observation-jar:after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: -45px;
+    height: calc(100% + 60px);
+    width: 100%;
+    border-left: 2px solid var(--accent-dark);
+    border-right: 2px solid var(--accent-dark);
+  } */
+
+@media screen and (min-width: 636px) {
+    .nav-links {
+        margin-left: 5em;
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+---
+import BookLayout from "../../layouts/BookLayout.astro";
+import { getCollection } from 'astro:content';
+let frontmatter = {
+    title: 'Proof of Existence',
+    lastEdit: '2025-03-12'
+}
+const allPages = await getCollection('proofOfExistence');
+allPages.sort((a, b) => a.chapter - b.chapter);
+const arcOrganization = await getCollection('poeArcs');
+---
+<BookLayout frontmatter={frontmatter}>
+    <blockquote><i>In my dreams, everything was burning. A voice was calling out for me.</i></blockquote>
+
+    <p>Summoned forth as the intended sacrifice of a mysterious ritual, a young man finds himself in a dangerous new world with the face of his attempted killer, Acacius Duval — but without any of his memories.</p>
+
+    <p>That would have been too convenient for navigating a world stitched together from apocalypses. </p>
+
+    <p>Fortunately, after only a few life and death trials, he is sent away to the prestigious Nithemoore Academy, where he can learn everything he needs to know and gain the power to grasp his freedom…</p>
+
+    <p>If the tracks of history don’t doom him first.</p>
+
+    <h2>Chapter Index</h2>
+    <ol>
+        { allPages.map((page) => 
+            <li><a href={`/proof-of-existence/${page.id}`}>{page.data.title}</a></li>
+        )}
+    </ol>
+
+    <h2>Supplemental Material</h2>
+    <ul>
+        <li><a href=`./character-appendix`>Character Appendix</a></li>
+        <li><a href=`./world-glossary`>World Glossary</a></li>
+        <li><a href=`./guide-to-lying`>Jeong Eunseok's Guide to Lying Without Lying</a></li>
+        <li><a href=`./record-of-existence`>Jeong Eunseok's Record of Existence</a></li>
+    </ul>
+</BookLayout>

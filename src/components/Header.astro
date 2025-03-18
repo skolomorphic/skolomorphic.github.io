@@ -1,0 +1,95 @@
+---
+import ReaderControls from "./ReaderControls.astro"
+---
+<header class="topnav">
+    <div class="logo">skolomorphic</div>
+    <nav>
+        <div class="navlinks">
+            <a href="/">Home</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+            <a href="/credits">Credits</a>
+        </div>
+    </nav>
+</header>
+<ReaderControls />
+<script>
+    import "../scripts/readerControls.js";
+</script>
+<style>
+.topnav {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--accent-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+/** NAVLINKS BASE */
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 16px;
+    font-family: 'Astloch';
+    color: var(--accent-contrast-light);
+    font-weight: 700;
+    font-size: 45px;
+}
+.navlinks a {
+    color: var(--accent-light);
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 1.5rem;
+    transition: all 0.1s ease-in-out;
+    margin: 0px 20px;
+    position: relative;
+    font-family: 'Flamenco';
+    font-variant: small-caps;
+}
+.navlinks a:hover, .navlinks a:active {
+    color: var(--accent-light);
+    text-decoration: underline wavy var(--accent-contrast-light);
+    transform: rotate(5deg);
+    transition: all 0.1s ease-in-out;
+}
+.navlinks a:nth-child(odd):hover, .navlinks a:nth-child(odd):active {
+    color: var(--accent-light);
+    text-decoration: underline wavy var(--accent-contrast-light);
+    transform: rotate(-5deg);
+}
+
+/** NAVLINKS DECO */
+.navlinks a::before {
+    content: '𓆨';
+    font-size: 50px;
+    line-height: 0rem;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: -30px;
+    color: var(--accent-contrast-light);
+    display: inline-block;
+    color: var(--accent-dark);
+    transition: all 0.2s ease-in-out;
+    /* right: -18px; */
+}
+.navlinks a:nth-child(even)::before {
+    transform: rotate(170deg);
+    bottom: 0px;
+}
+
+.navlinks a:nth-child(odd)::before {
+    transform: rotate(200deg) scale(1, -1);
+    top: 5px;
+}
+.navlinks a:hover::before, .navlinks a:active::before {
+    color: var(--accent-contrast-light);
+    right: -60px;
+    transition: all 0.2s ease-in-out;
+}
+</style>

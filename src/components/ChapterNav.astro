@@ -1,0 +1,53 @@
+---
+const { chapter, size, isIndexOnly } = Astro.props;
+const prevLink = chapter <= 1 ? `./` : `./${chapter - 1}`;
+const prevText = chapter <= 1 ? "Back to Index" : `Chapter ${chapter - 1}`;
+const nextLink = chapter >= size ? './' : `./${chapter + 1}`;
+const nextText = chapter >= size ? "Back to Index" : `Chapter ${chapter + 1}`;
+---
+<div id="chapternav">
+    <a class="chapternavbutton" href={prevLink}>
+        <box-icon name="chevron-left" pull="left" size="md"></box-icon>
+        <span class="chapternavtext">{prevText}</span>
+    </a>
+    {isIndexOnly && 
+        <a class="chapternavbutton" href={nextLink} style="flex-direction: row-reverse;">
+            <box-icon name="chevron-right" pull="right" size="md"></box-icon>
+            <span class="chapternavtext">{nextText}</span>
+        </a> 
+    }
+</div>
+<style>
+#chapternav {
+    display: flex;
+    border-top: 1px solid var(--accent-dark);
+    border-bottom: 1px solid var(--accent-dark);
+}
+.chapternavbutton {
+    display: flex;
+    align-content: center;
+    flex: 1;
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+    align-content: center;
+    color: var(--accent-contrast-light);
+}
+.chapternavbutton > * {
+    flex: initial;
+    align-self: center;
+}
+.chapternavbutton:hover, .chapternavbutton:active {
+    background-color: var(--accent-light);
+    color: var(--accent-dark);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.chapternavtext {
+    font-size: 2rem;
+    font-variant: small-caps;
+    padding: 1rem 0;
+    font-weight: 700;
+    font-family: 'Flamenco';
+}
+</style>

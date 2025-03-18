@@ -16,7 +16,9 @@ const allPages = Object.values(import.meta.glob('./*.md', { eager: true }));
         <div id="book-content">
             <slot />
         </div>
-        <script>
+        <script is:inline>
+            // make header sticky instead of fixed?
+            // add 'pre' formatting for system announcements?
             import "../scripts/readerControls.js";
         </script>
 
@@ -25,7 +27,7 @@ const allPages = Object.values(import.meta.glob('./*.md', { eager: true }));
     <Footer />
     <script is:inline>
         function setReaderSettings(document) {
-            let settings = ['font-family', 'line-height', 'font-size'];
+            let settings = ['--reader-font-family', '--reader-line-height', '--reader-font-size'];
             let bookContent = document.getElementById('book-content');
             settings.forEach((s) => bookContent.style.setProperty(s, localStorage.getItem(s)));
             // let theme = localStorage.darkMode ? "dark" : "light";

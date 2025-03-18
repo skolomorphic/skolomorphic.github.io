@@ -24,10 +24,8 @@ const allPages = Object.values(import.meta.glob('./*.md', { eager: true }));
     <Footer />
     <script is:inline>
         function setReaderSettings(document) {
-            console.log('reader settings called');
             let settings = ['font-family', 'line-height', 'font-size'];
             let bookContent = document.getElementById('book-content');
-            console.log(bookContent);
             settings.forEach((s) => bookContent.style.setProperty(s, localStorage.getItem(s)));
             // let theme = localStorage.darkMode ? "dark" : "light";
             // document.documentElement.dataset.theme = theme;

@@ -17,7 +17,7 @@ const date = new Date(frontmatter.lastEdit).toLocaleDateString().replaceAll('/',
     }
 </div>
 { chapter != null && chapter >=0 && <ChapterNav chapter={chapter} size={size} isIndexOnly={indexonly} /> }
-<Comments />
+<Comments title={frontmatter.title} />
 <style>
 .post-matter {
     font-family: 'Source Code Pro', monospace;

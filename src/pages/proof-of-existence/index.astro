@@ -6,7 +6,7 @@ let frontmatter = {
     lastEdit: '2025-03-12'
 }
 const allPages = await getCollection('proofOfExistence');
-allPages.sort((a, b) => a.chapter - b.chapter);
+allPages.sort((a, b) => a.data.chapter - b.data.chapter);
 const arcOrganization = await getCollection('poeArcs');
 ---
 <BookLayout frontmatter={frontmatter}>
@@ -23,7 +23,7 @@ const arcOrganization = await getCollection('poeArcs');
     <h2>Chapter Index</h2>
     <ol>
         { allPages.map((page) => 
-            <li><a href={`/proof-of-existence/${page.id}`}>{page.data.title}</a></li>
+            <li><a href={`/proof-of-existence/${page.id}/`}>{page.data.title}</a></li>
         )}
     </ol>
 

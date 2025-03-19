@@ -55,7 +55,7 @@ hr {
     display: block;
     line-height: 1px;
     height: 1px;
-    margin: 2rem auto;
+    margin: calc(var(--reader-p-spacing) * 2) auto;
     width: 80%;
 }
 hr::before {
@@ -64,7 +64,7 @@ hr::before {
     color: var(--accent-light);
     font-size: 4rem;
     position: absolute;
-    left: 50%;
+    left: calc(50% - 0.5ch);
     transform: rotate(90deg);
     transform-origin: center;
     opacity: .6;

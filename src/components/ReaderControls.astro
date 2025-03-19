@@ -1,33 +1,64 @@
 ---
 ---
 <div class="control-container" transition:persist>
-    <ul id="reader-controls" class="hidden">
-        <li><b>Font size:</b> <button type="button" class="decreaseFont">-</button> <button type="button" class="increaseFont">+</button></li>
-        <li><b>Line height:</b> <button type="button" class="decreaseLineHeight">-</button> <button type="button" class="increaseLineHeight">+</button></li>
-        <li><b>Paragraph spacing:</b> <button type="button" class="decreasePSpacing">-</button> <button type="button" class="increasePSpacing">+</button></li>
-        <!-- <li><b>Theme:</b> <button type="button">Light</button> <button type="button">Dark</button></li> -->
-        <li><b>Font:</b> 
-            <button type="button" class="changeArial"><span style="font-family: Arial, sans-serif;">Arial</span></button> 
-            <button type="button" class="changeHelvetica"><span style="font-family: Helvetica, sans-serif;">Helvetica</span></button> 
+    <div id="reader-controls" class="hidden">
+        <p class="control-section"><b>Font size:</b></p>
+        <div class="control-wrapper">
+            <button type="button" class="decreaseFont">-</button>
+            <button type="button" class="increaseFont">+</button>
+        </div>
+
+        <p class="control-section"><b>Line height:</b></p>
+        <div class="control-wrapper">
+            <button type="button" class="decreaseLineHeight">-</button>
+            <button type="button" class="increaseLineHeight">+</button>
+        </div>
+
+        <p class="control-section"><b>Paragraph spacing:</b></p>
+        <div class="control-wrapper">
+            <button type="button" class="decreasePSpacing">-</button>
+            <button type="button" class="increasePSpacing">+</button>
+        </div>
+        <!-- <p><b>Theme:</b> <button type="button">Light</button> <button type="button">Dark</button></p> -->
+        <p class="control-section"><b>Font:</b></p>
+        <div class="control-wrapper">
+            <button type="button" class="changeArial"><span style="font-family: Arial, sans-serif;">Arial</span></button>
             <button type="button" class="changeGeorgia"><span style="font-family: Georgia, serif;">Georgia</span></button> 
             <button type="button" class="changeTrebuchet"><span style="font-family: 'Trebuchet MS', serif;">Trebuchet</span></button> 
             <button type="button" class="changeTimes"><span style="font-family: 'Times New Roman', serif;">Times</span></button>
-        </li>
-        <li><button type="button" class="restoreDefaults">Restore Defaults</button></li>
-    </ul>
+            <button type="button" class="changeGaramond"><span style="font-family: Garamond, serif;">Garamond</span></button>
+            <button type="button" class="changeTahoma"><span style="font-family: Tahoma, sans-serif;">Tahoma</span></button>
+        </div>
+        <div class="control-wrapper"><button type="button" class="restoreDefaults">Restore Defaults</button></div>
+    </div>
     <div class="control-toggle" align="right">
         <box-icon name="cog" size="md" type="solid"></box-icon>
     </div>
 </div>
 <style>
 #reader-controls {
-    list-style-type: none;
     padding: 1rem;
-    border: 1px solid gray;
-    background-color: white;
+    border: 1px solid var(--accent-ultralight);
+    background-color: var(--main-bg-color);
     border-radius: 15px;
-    max-width: 200px;
+    /* max-width: 200px; */
     margin: 0;
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+    font-size: calc(1rem - 2px);
+    max-width: 300px;
+}
+#reader-controls button {
+    border: 1px solid var(--accent-dark);
+    background-color: var(--main-bg);
+    box-shadow: 3px 3px var(--accent-dark);
+    color: var(--accent-dark);
+    padding: 3px 8px;
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+}
+#reader-controls button:hover, #reader-controls button:active {
+    background-color: var(--accent-dark);
+    box-shadow: 3px 3px var(--accent-light);
+    color: var(--accent-light);
 }
 .control-container {
     position: fixed;
@@ -35,7 +66,37 @@
     right: 0;
     padding: 0.5rem;
 }
-.control-toggle {
+.control-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+}
+.control-wrapper > * {
+    align-self: stretch;
+    flex: 1 1 auto;
+    margin: 5px;
+}
+.control-section {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.control-section::before {
+    content: '';
+    flex: initial;
+    height: 1px;
+    margin-right: 10px;
+    width: 20px;
+    border-top: 1px solid var(--accent-light);
+}
+.control-section::after {
+    content: '';
+    flex: 1;
+    margin-left: 10px;
+    height: 1px;
+    border-top: 1px solid var(--accent-light);
 }
 .hidden {
     display: none;

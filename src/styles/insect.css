@@ -92,14 +92,15 @@ h2 {
     padding: 5px 10px 5px 5px;
     margin: 5px 0;
     width: 100%;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.1s;
     font-family: 'Arvo', Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
 }
 
 .navlinks a {
     flex: initial;
-    width: 100%;
+    width: 100%; 
+    text-align: center;
 }
 
 .navlinks a:nth-child(odd) {
@@ -114,22 +115,22 @@ h2 {
     text-decoration: none;
     background-color: var(--accent-contrast-light);
     color: var(--accent-contrast-dark);
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.1s;
 }
 
-.navlinks a::after {
+.navlinks a::before, a::after {
     content: '𓆦';
     display: inline-block;
     margin-left: 5px;
     transform: rotate(-90deg);
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.1s;
     opacity: 0;
 }
 
 .navlinks a:hover::after {
     display: inline-block;
     margin-left: 5px;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.1s;
     opacity: 1;
 }
 
@@ -176,7 +177,7 @@ h2 {
     }
 
     .navlinks {
-        margin: 0 auto;
+        width: 100%;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -190,7 +191,7 @@ h2 {
         margin: 5px;
     }
 
-    .navlinks a::after {
+    .navlinks a::before, a::after {
         display: none;
     }
 

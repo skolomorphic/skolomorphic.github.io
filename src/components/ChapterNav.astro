@@ -7,13 +7,13 @@ const nextText = chapter >= size ? "Back to Index" : `Chapter ${chapter + 1}`;
 ---
 <div id="chapternav">
     <a class="chapternavbutton" href={prevLink}>
-        <box-icon name="chevron-left" pull="left" size="md"></box-icon>
+        <span class="chapter-chevron"><i class="fas fa-chevron-left"></i></span>
         <span class="chapternavtext">{prevText}</span>
     </a>
     {isIndexOnly && 
-        <a class="chapternavbutton" href={nextLink} style="flex-direction: row-reverse;">
-            <box-icon name="chevron-right" pull="right" size="md"></box-icon>
-            <span class="chapternavtext">{nextText}</span>
+        <a class="chapternavbutton" href={nextLink} style="justify-content: right;">
+            <span class="chapternavtext" style="text-align: right;">{nextText}</span>
+            <span class="chapter-chevron"><i class="fas fa-chevron-right"></i></span>
         </a> 
     }
 </div>
@@ -28,8 +28,8 @@ const nextText = chapter >= size ? "Back to Index" : `Chapter ${chapter + 1}`;
     align-content: center;
     flex: 1;
     text-decoration: none;
-    padding: 1rem;
-    transition: all 0.5s ease-in-out;
+    padding: 16px 8px;
+    transition: all 0.2s ease-in-out;
     align-content: center;
     color: var(--accent-contrast-light);
 }
@@ -41,13 +41,25 @@ const nextText = chapter >= size ? "Back to Index" : `Chapter ${chapter + 1}`;
     background-color: var(--accent-light);
     color: var(--accent-dark);
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .chapternavtext {
     font-size: 2rem;
     font-variant: small-caps;
-    padding: 1rem 0;
+    padding: 10px 0;
     font-weight: 700;
     font-family: 'Flamenco';
+}
+
+.chapter-chevron {
+    color: var(--accent-shadow);
+    margin: auto 10px;
+}
+
+@media screen and (max-width: 550) {
+    .chapternavtext  {
+        font-size: 24px;
+        line-height: 24px;
+    }
 }
 </style>

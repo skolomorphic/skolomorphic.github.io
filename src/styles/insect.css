@@ -191,7 +191,7 @@ h2 {
         margin: 5px;
     }
 
-    .navlinks a::before, a::after {
+    .navlinks a::before, .navlinks a::after {
         display: none;
     }
 

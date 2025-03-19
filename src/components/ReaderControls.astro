@@ -34,7 +34,7 @@ import DarkModeToggle from "./DarkModeToggle.astro"
         <div class="control-wrapper"><button type="button" class="restoreDefaults">Restore Defaults</button></div>
     </div>
     <div class="control-toggle" align="right">
-        <box-icon name="cog" size="md" type="solid"></box-icon>
+        <i class="fas fa-gear"></i>
     </div>
 </div>
 <style>
@@ -98,6 +98,12 @@ import DarkModeToggle from "./DarkModeToggle.astro"
     margin-left: 10px;
     height: 1px;
     border-top: 1px solid var(--accent-light);
+}
+
+.control-toggle {
+    color: var(--accent-midtone);
+    font-size: 30px;
+    margin-top: 5px;
 }
 .hidden {
     display: none;

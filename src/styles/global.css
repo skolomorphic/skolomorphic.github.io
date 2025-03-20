@@ -7,6 +7,8 @@ body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-height: 100%;
+    color: var(--body-font);
+    background-color: var(--main-bg-color);
 }
 
 h1 {
@@ -52,19 +54,6 @@ a, a:hover {
 
 /* nav styles */
 
-.hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-}
-  
-.hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #ff9776;
-}
-
 .nav-links {
     width: 100%;
     top: 5rem;
@@ -105,9 +94,5 @@ a, a:hover {
     .nav-links a {
         display: inline-block;
         padding: 15px 20px;
-    }
-
-    .hamburger {
-        display: none;
     }
 }

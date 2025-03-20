@@ -199,3 +199,14 @@ h2 {
         display: none;
     }
 }
+@media screen and (prefers-color-scheme: dark) {
+    .navlinks a, .navlinks a:visited {
+        background-color: var(--accent-light);
+        color: var(--accent-dark);
+    }
+
+    .navlinks a:hover, .navlinks a:active {
+        background-color: var(--accent-contrast-light);
+        color: var(--accent-contrast-dark);
+    }
+}

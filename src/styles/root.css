@@ -10,4 +10,23 @@
     --accent-contrast-light: #d55a26;
     --accent-light: #9dcbb8;
     --accent-ultralight: #dcf0e8;
+    --body-font: #0B0B0B;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    /* Dark mode styles */
+    :root {
+        --main-bg-color: #0B0B0B;
+        --dark-bg-color: #0B0B0B;
+        --body-bg: #191919;
+        --text-body: #000;
+        --accent-shadow: #0c7f5b;
+        --accent-dark: #44b686;
+        --accent-midtone: #496539;
+        --accent-contrast-dark: #461905;
+        --accent-contrast-light: #bd5224;
+        --accent-light: #103d2a;
+        --accent-ultralight: #172d24;
+        --body-font: #c4c4c4;
+    }
 }

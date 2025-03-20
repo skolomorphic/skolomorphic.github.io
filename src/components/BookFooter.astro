@@ -49,4 +49,10 @@ const date = new Date(frontmatter.lastEdit).toLocaleDateString().replaceAll('/',
     color: var(--accent-light);
     box-shadow: 5px 5px var(--accent-light);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .tag {
+    box-shadow: 5px 5px var(--accent-light);
+    color: var(--accent-dark);
+  }
+}
 </style>

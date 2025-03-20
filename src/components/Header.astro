@@ -89,8 +89,6 @@ const { collectionName, headingsName } = Astro.props;
     transition: all 0.1s ease-in-out;
 }
 #navlinks a:nth-child(odd):hover, #navlinks a:nth-child(odd):active {
-    color: var(--accent-light);
-    text-decoration: underline wavy var(--accent-contrast-light);
     transform: rotate(-5deg);
 }
 
@@ -104,7 +102,6 @@ const { collectionName, headingsName } = Astro.props;
     padding: 0;
     color: var(--accent-contrast-light);
     display: inline-block;
-    color: var(--accent-dark);
     transition: all 0.3s ease-in-out;
     display: none;
 }
@@ -132,16 +129,6 @@ const { collectionName, headingsName } = Astro.props;
     border-radius: 15px;
     padding: 5px;
 }
-
-/* @media screen and (max-width: 1100px) {
-    .topnav {
-        grid-template: 
-            "toc logo toggle"
-            "link links links"
-            / fit-content(100px) 1fr fit-content(100px);
-        position: relative;
-    }
-} */
 
 @media screen and (max-width: 1100px) {
     .topnav {
@@ -188,6 +175,25 @@ const { collectionName, headingsName } = Astro.props;
 
     .mainlinkstoggle:has(input[type="checkbox"]:checked) ~ #navlinks {
         height: auto;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    /* Dark mode styles */
+    .topnav {
+        background-color: var(--accent-light);
+    }
+
+    .mainlinkstoggle {
+        color: var(--accent-dark);
+    }
+
+    #navlinks a, #navlinks a:visited  {
+        color: var(--accent-dark);
+    }
+
+    #navlinks a:hover, #navlinks a:active {
+        color: var(--accent-dark);
     }
 }
 </style>

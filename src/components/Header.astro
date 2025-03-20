@@ -128,7 +128,12 @@ const { collectionName, headingsName } = Astro.props;
         height: auto;
 }
 
-@media screen and (max-width: 1100px) {
+#togglemenu-label {
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* @media screen and (max-width: 1100px) {
     .topnav {
         grid-template: 
             "toc logo toggle"
@@ -136,9 +141,9 @@ const { collectionName, headingsName } = Astro.props;
             / fit-content(100px) 1fr fit-content(100px);
         position: relative;
     }
-}
+} */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
     .topnav {
         grid-template: 
             "toc logo linkmenu"
@@ -165,13 +170,16 @@ const { collectionName, headingsName } = Astro.props;
         display: initial;
         color: var(--accent-light);
         grid-area: linkmenu;
-        margin: auto;
+        margin: auto 10px auto auto;
+    }
+
+    .mainlinkstoggle input {
+        border-radius: 15px;
+        padding: 5px;
     }
 
     .mainlinkstoggle:has(input[type="checkbox"]:checked) #togglemenu-label {
         background-color: var(--accent-shadow);
-        border-radius: 15px;
-        padding: 5px;
     }
     .mainlinkstoggle:has(input[type="checkbox"]) ~ #navlinks {
         height: 0;

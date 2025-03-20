@@ -25,7 +25,7 @@ html.dark {
     --accent-contrast-light: #bd5224;
     --accent-light: #103d2a;
     --accent-ultralight: #172d24;
-    --body-font: #c4c4c4;
+    --body-font: #e1e1e1;
 }
 
 @media screen and (prefers-color-scheme: dark) {

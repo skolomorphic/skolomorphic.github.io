@@ -1,7 +1,6 @@
 function changeProperty(property, changeValue, measure) {
     let docElement = document.getElementById('book-content');
     let oldValue = window.getComputedStyle(docElement).getPropertyValue(property);
-    console.log('oldValue', oldValue);
     let newValue = measure ? parseFloat(oldValue) + changeValue + measure : changeValue;
     docElement.style.setProperty(property, newValue);
     localStorage.setItem(property, newValue);

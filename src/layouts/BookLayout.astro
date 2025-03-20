@@ -5,11 +5,11 @@ import ReaderControls from "../components/ReaderControls.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import BookFooter from "../components/BookFooter.astro";
-const { frontmatter, postsize } = Astro.props;
+const { frontmatter, postsize, collectionName, headingsName } = Astro.props;
 const allPages = Object.values(import.meta.glob('./*.md', { eager: true }));
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-    <Header />
+    <Header collectionName={collectionName} headingsName={headingsName} />
     <ReaderControls />
     <script>
         import "../scripts/readerControls.js";

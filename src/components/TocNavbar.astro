@@ -1,6 +1,18 @@
 ---
-const { collection, hasSubheadings, headingsMetadata } = Astro.props;
+const { collectionName, headingsName } = Astro.props;
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection(collectionName);
+  return posts.map(post => ({
+    params: { slug: post.id }, props: { post }
+  }));
+}
+
+const collection = await getCollection(collectionName);
+console.log(JSON.stringify(collection));
 ---
+{ collectionName && 
 <div id="menuToggle">
     <input type="checkbox" />
     <span></span>
@@ -9,14 +21,14 @@ const { collection, hasSubheadings, headingsMetadata } = Astro.props;
 
     <div id="menu">
         <div class="menucontent">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Info</a>
-            <a href="#">Contact</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Table of Contents</h3>
+            { collection.map((page) => 
+                <li><a href={`/proof-of-existence/${page.id}/`}>{page.data.title}</a></li>
+            )}
         </div>
     </div>
  </div>
+ }
  <style>
 #menuToggle {
   padding: 10px;

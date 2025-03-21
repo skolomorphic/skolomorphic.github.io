@@ -54,6 +54,10 @@ document.querySelector('.changeTahoma').addEventListener('click', () => {
     changeProperty('--reader-font-family', "Tahoma, sans-serif", '');
 });
 
+document.querySelector('.changeNoto').addEventListener('click', () => {
+    changeProperty('--reader-font-family', "'Noto Sans', sans-serif", '');
+});
+
 document.querySelector('.restoreDefaults').addEventListener('click', () => {
     let docElement = document.getElementById('book-content');
     docElement.style.setProperty('--reader-font-family', docElement.style.getPropertyValue('--default-font-family'));

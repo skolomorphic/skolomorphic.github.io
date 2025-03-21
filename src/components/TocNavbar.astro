@@ -54,7 +54,7 @@ const collection = await getCollection(collectionName);
   height: 2px;
   margin: 7px 0;
   position: relative;
-  background: var(--accent-light);
+  background: var(--reader-navbar-links);
   border-radius: 3px;
   z-index: 5;
   transform-origin: 5px 0px;
@@ -123,11 +123,5 @@ const collection = await getCollection(collectionName);
 .menucontent {
     height: 100%;
     overflow: auto;
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  #menuToggle span {
-    background: var(--accent-dark);
-  }
 }
  </style>

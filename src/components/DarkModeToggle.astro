@@ -67,9 +67,9 @@
 
   function setInitialTheme() {
     console.log('setinitialtheme localstorage:', localStorage.getItem('theme'));
-    const useDark = (window.matchMedia && 
-                    window.matchMedia('(prefers-color-scheme: dark)').matches)
-                    || localStorage.getItem('theme') === 'dark';
+    const useDark = localStorage.getItem('theme') ? 
+                    localStorage.getItem('theme') === 'dark' : 
+                    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
     document.getElementById("checkbox").checked = useDark;
     toggleTheme(useDark);
   }

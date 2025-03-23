@@ -1,5 +1,6 @@
 ---
 const { title } = Astro.props;
+const pathName = Astro.url.pathname;
 ---
 <div id="comments">
     <h1 class="comment-header">Comments</h1>
@@ -9,10 +10,38 @@ const { title } = Astro.props;
         <p>I look forward to hearing from you.</p>
         <p>Thanks for visiting my page!</p>
     </div>
-    <div class="commentbox-wrapper">
-        <div class="commentbox"></div>
+    <div class="commentbox-wrapper">  
+        <!-- customize labels of htmlcommentbox.com -->
+        <script is:inline data-astro-rerun type="text/javascript" define:vars={{pathName}}>
+            /* This code goes ABOVE the main HTML Comment Box code!
+            replace the text in the single quotes below to customize labels.*/
+            hcb_user = {
+                /* L10N */
+                comments_header : 'Page Comments',
+                logout_link : '<img title="log out" src="https://www.htmlcommentbox.com/static/images/door_out.svg" alt="[logout]" class="hcb-icon hcb-door-out"/>',
+                admin_link : '<img src="https://www.htmlcommentbox.com/static/images/door_in.svg" alt="[login]" class="hcb-icon hcb-door-in"/>',
+                rss:'<i class="fas fa-rss"></i> Subscribe to this comment feed',
+                prev_page:'<img src="https://www.htmlcommentbox.com/static/images/arrow_left.png" class="hcb-icon" title="previous page" alt="[prev]"/>',
+                next_page:'<img src="https://www.htmlcommentbox.com/static/images/arrow_right.png" class="hcb-icon" title="next page" alt="[next]"/>',
+                PAGE: `${pathName}` /* ID of the webpage to show comments for. defaults to the webpage the user is currently visiting. */
+            };
+        </script>
+        <!-- done customizing labels of htmlcommentbox.com -->
+        <!-- begin wwww.htmlcommentbox.com -->
+        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+        <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+        <script is:inline data-astro-rerun type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={}; console.log('hcb user?!', hcb_user);} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24xlen81zX4BBvw6b8mSiAp%2F"+"&opts=16798&num=10&ts=1742707546107");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+        <!-- end www.htmlcommentbox.com -->
+        <script is:inline data-astro-rerun>
+            setTimeout(function () {
+                document.querySelector('.home-desc').innerHTML = `Powered by <a target="_blank" href="https://www.htmlcommentbox.com">Html Comment Box</a>`;
+            }, 
+            20);
+        </script>
+
+        <!-- <div class="commentbox"></div>
         <script is:inline data-astro-rerun src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-        <script is:inline data-astro-rerun>commentBox('5759568818733056-proj', { subtextColor: '#461905'});</script>
+        <script is:inline data-astro-rerun>commentBox('5759568818733056-proj', { subtextColor: '#461905'});</script> -->
     </div>
     <!-- <div id="cusdis-wrapper">
         <div id="cusdis_thread"
@@ -42,7 +71,7 @@ const { title } = Astro.props;
         window.addEventListener('load', function () { fixIframe(); });
     </script> -->
 </div>
-<style>     
+<style is:global>     
 #comments {
     margin-top: 50px;
 }
@@ -65,8 +94,46 @@ const { title } = Astro.props;
     margin-bottom: 0;
 }
 .commentbox-wrapper {
-    padding: 5px;
-    background-color: var(--commentbox-wrapper);
+    padding: 5px 15px;
+    background-color: var(--accent-ultralight);
     border-radius: 5px;
+}
+
+/* html comment box */
+#HCB_comment_box h3 {
+    border-bottom: 1px solid var(--accent-dark);
+}
+#HCB_comment_box .comment {
+    padding-left: 16px;
+    border-left: 1px solid var(--accent-dark);
+}
+#HCB_comment_box #hcb_msg {
+    margin: 5px auto;
+}
+#HCB_comment_box .hcb-comment-tb button {
+    color: var(--accent-contrast-light) !important;
+}
+#HCB_comment_box #hcb_submit {
+    background-color:var(--accent-midtone) !important;
+    border:1px solid var(--accent-midtone) !important;
+    color: var(--body-font);
+}
+
+#HCB_comment_box #hcb_form_content,
+  #HCB_comment_box #hcb_form_email,
+  #HCB_comment_box #hcb_form_name,
+  #HCB_comment_box #hcb_form_website {
+    background-color: var(--accent-light);
+    color: var(--body-font);
+    border: 1px solid var(--accent-midtone);
+  }
+
+  /* #HCB_comment_box a:last-child {
+    color: var(--accent-contrast-light);
+  } */
+
+#HCB_comment_box a, #HCB_comment_box #hcb_form .home-desc a, #HCB_comment_box .home-desc a:visited {
+    color: var(--accent-contrast-light);
+    text-decoration: underline wavy var(--accent-contrast-light);
 }
 </style>

@@ -3,6 +3,7 @@ layout: "../../layouts/BookLayout.astro"
 title: "World Glossary"
 chapter: 0
 lastEdit: 2025-03-12
+collectionName: 'proofOfExistence'
 ---
 
 ## Political Entities

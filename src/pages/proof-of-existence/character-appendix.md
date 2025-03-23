@@ -3,6 +3,7 @@ layout: "../../layouts/BookLayout.astro"
 title: "Character Appendix"
 chapter: 0
 lastEdit: 2025-03-12
+collectionName: 'proofOfExistence'
 ---
 **Acacius Duval:** The apparent heir to the Duval family. He seems to have had many plans in the works when he summoned Jeong Eunseok and lost everything to him. He has tan skin, rose-gold hair that is usually combed back, and sharp amber eyes. He is in a faction opposed to the three Great Families.
 

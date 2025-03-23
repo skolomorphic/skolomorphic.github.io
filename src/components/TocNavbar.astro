@@ -21,7 +21,7 @@ const collection = await getCollection(collectionName);
     <div id="menu">
         <div class="menucontent">
             <h3>Table of Contents</h3>
-                <a href={`./`}>Index</a>
+                <a href={`../`}>Index</a>
             { collection.map((page) => 
                 <a href={`/proof-of-existence/${page.id}/`}>{page.data.title}</a>
             )}

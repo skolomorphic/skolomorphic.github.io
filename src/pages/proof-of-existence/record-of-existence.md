@@ -75,7 +75,7 @@ This is not a complete record.
 > 
 > **Description:** The dreamer of another future fears making great changes, lest the future slip out of control. Go forth and walk step by step to the end; dream as many variations as you like, for the destination you have envisioned will not change. But surely the small changes you accumulate will be enough to divert the path at the most critical moment. 
 > 
-> **Title Skill:** When the user sleeps, they can dream of the future, from now until a future point in time. Until they reach that future point in the waking world, they will not be able to dream of a different end. 
+> **Title Skill:** When the user sleeps, they can dream of the future, from now until a chosen future point in time. Until they reach the end date of the future that they have seen, they will not be able to dream of a different end. 
 > 
 > **Note:** Kosmonymia is watching you. 
 

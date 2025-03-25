@@ -47,7 +47,7 @@ a, a:visited {
     text-decoration: underline wavy var(--accent-contrast-light);
 }
 
-a, a:hover {
+a:active, a:hover {
     color: var(--accent-midtone);
     text-decoration: underline wavy var(--accent-midtone);
 }

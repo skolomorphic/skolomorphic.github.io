@@ -1,4 +1,4 @@
-:root {
+html, html.light {
     --main-bg-color: #ffffff;
     --dark-bg-color: #0B0B0B;
     --body-bg: #f1fbf3;
@@ -13,9 +13,24 @@
     --body-font: #0B0B0B;
 }
 
+html.dark {
+    --main-bg-color: #0B0B0B;
+    --dark-bg-color: #0B0B0B;
+    --body-bg: #191919;
+    --text-body: #000;
+    --accent-shadow: #0c7f5b;
+    --accent-dark: #44b686;
+    --accent-midtone: #496539;
+    --accent-contrast-dark: #461905;
+    --accent-contrast-light: #bd5224;
+    --accent-light: #103d2a;
+    --accent-ultralight: #172d24;
+    --body-font: #c4c4c4;
+}
+
 @media screen and (prefers-color-scheme: dark) {
     /* Dark mode styles */
-    :root {
+    html {
         --main-bg-color: #0B0B0B;
         --dark-bg-color: #0B0B0B;
         --body-bg: #191919;

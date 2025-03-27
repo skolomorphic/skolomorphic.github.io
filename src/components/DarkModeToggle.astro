@@ -51,8 +51,30 @@
   transform: translateX(24px);
 }
 </style>
-<script>
-    document.getElementById("checkbox").addEventListener("change", () => {
-        document.body.classList.toggle("dark")
-    })
+<script is:inline >
+  function toggleTheme(useDark) {
+    if (useDark) {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
+      localStorage.setItem('theme', 'light');
+    }
+    console.log('useDark:', useDark, 'localStorage theme:', localStorage.getItem('theme'));
+  }
+
+  function setInitialTheme() {
+    console.log('setinitialtheme');
+    const useDark = (window.matchMedia && 
+                    window.matchMedia('(prefers-color-scheme: dark)').matches)
+                    && localStorage.getItem('theme') !== 'light';
+    document.getElementById("checkbox").checked = useDark;
+    toggleTheme(useDark);
+  }
+  
+  document.getElementById("checkbox").addEventListener("change", function () { toggleTheme(checkbox.checked); } );
+  document.addEventListener("astro:after-swap", setInitialTheme);
+  setInitialTheme();
 </script>

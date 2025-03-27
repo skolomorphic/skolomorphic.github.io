@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: var(--main-bg-color);
+    background-color: var(--dark-bg-color);
     background: url('../resources/topography.png') repeat;
 }
 

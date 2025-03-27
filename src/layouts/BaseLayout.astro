@@ -1,15 +1,8 @@
 ---
 import '../styles/root.css';
 import '../styles/global.css';
-import { getImage } from "astro:assets";
 import { ClientRouter } from "astro:transitions";
 const { pageTitle } = Astro.props;
-
-import image from "../resources/topography.png";
-const optimizedImage = await getImage({
-  src: image,
-  format: "webp",
-});
 ---
 
 <html lang="en">

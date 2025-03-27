@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
 const pathName = Astro.url.pathname;
+const neocitiesUrl = "https://skolomorphic.neocities.org" + pathName + '#comments';
 const gitBookUrl = "https://skolomorphic.github.io" + pathName + '#comments';
 ---
 <section id="comments">
@@ -9,9 +10,7 @@ const gitBookUrl = "https://skolomorphic.github.io" + pathName + '#comments';
         <p>Hi! If you'd like to share your thoughts or ask a question, you can email me at 
             <a>skolomorphic@protonmail.com</a>, visit me on <a href="http://skolomorphic.tumblr.com/">tumblr</a>, 
             or leave a comment below.</p>
-        <p>Please note that <strong>likes & comments do not work on the neocities mirror of my website</strong>
-        due to content restriction policies. If you are visiting this page from neocities, you can comment on
-        the <a href={gitBookUrl}>Github Books</a> page instead.</p>
+        <p>This webpage has a <a href={gitBookUrl}>Neocities mirror</a> and a <a href={gitBookUrl}>Github Books mirror</a>.</p>
         <p>I look forward to hearing from you.</p>
         <p>Thanks for visiting my page!</p>
     </div>

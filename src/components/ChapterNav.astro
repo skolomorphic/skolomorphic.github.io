@@ -7,13 +7,13 @@ const nextText = chapter >= size ? "Back to Index" : `Chapter ${chapter + 1}`;
 ---
 <div id="chapternav">
     <a class="chapternavbutton" href={prevLink}>
-        <span class="chapter-chevron"><i class="fas fa-chevron-left"></i></span>
+        <svg class="chapter-chevron" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-dasharray="12" stroke-dashoffset="12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12l7 -7M8 12l7 7"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="12;0"/></path></svg>
         <span class="chapternavtext">{prevText}</span>
     </a>
     {isIndexOnly && 
         <a class="chapternavbutton" href={nextLink} style="justify-content: right;">
             <span class="chapternavtext" style="text-align: right;">{nextText}</span>
-            <span class="chapter-chevron"><i class="fas fa-chevron-right"></i></span>
+            <svg class="chapter-chevron" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-dasharray="12" stroke-dashoffset="12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-7 -7M16 12l-7 7"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="12;0"/></path></svg>
         </a> 
     }
 </div>
@@ -25,12 +25,12 @@ const nextText = chapter >= size ? "Back to Index" : `Chapter ${chapter + 1}`;
 }
 .chapternavbutton {
     display: flex;
-    align-content: center;
     flex: 1;
     text-decoration: none;
     padding: 16px 8px;
     transition: all 0.2s ease-in-out;
     align-content: center;
+    align-items: center;
     color: var(--accent-contrast-light);
 }
 .chapternavbutton > * {
@@ -56,7 +56,7 @@ const nextText = chapter >= size ? "Back to Index" : `Chapter ${chapter + 1}`;
     margin: auto 10px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
     .chapternavtext  {
         font-size: 24px;
         line-height: 24px;

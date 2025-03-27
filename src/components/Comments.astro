@@ -1,9 +1,9 @@
 ---
 const { title } = Astro.props;
 const pathName = Astro.url.pathname;
-const gitBookUrl = "https://skolomorphic.github.io" + pathName;
+const gitBookUrl = "https://skolomorphic.github.io" + pathName + '#comments';
 ---
-<div id="comments">
+<section id="comments">
     <h1 class="comment-header">Comments</h1>
     <div class="notice">
         <p>Hi! If you'd like to share your thoughts or ask a question, you can email me at 
@@ -39,7 +39,7 @@ const gitBookUrl = "https://skolomorphic.github.io" + pathName;
         <!-- end www.htmlcommentbox.com -->
         <p id="commentcredit">Comments powered by <a href="https://www.htmlcommentbox.com/"><strong>HTML Comment Box</strong></a>.</p>
     </div>
-</div>
+</section>
 <style is:global>     
 #comments {
     margin-top: 50px;

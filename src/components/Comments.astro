@@ -2,10 +2,34 @@
 const { title } = Astro.props;
 ---
 <div id="comments">
-    <h1 class="comment-header">Community Thoughts</h1>
-    <div class="commentbox"></div>
+    <h1 class="comment-header">Comments</h1>
+    <!-- <div class="commentbox"></div>
     <script is:inline src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-    <script is:inline>commentBox('5759568818733056-proj')</script>
+    <script is:inline>commentBox('5759568818733056-proj')</script> -->
+    <div id="cusdis_thread"
+        data-host="https://cusdis.com"
+        data-app-id="30c5b5ed-36a7-4e9a-b102-12c5aa2b886f"
+        data-page-id={Astro.url.pathname}
+        data-page-url={Astro.url}
+        data-page-title={title}
+    ></div>
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <script is:inline>
+        function reloadComments() {
+            window.CUSDIS.initial();
+        }
+        document.addEventListener("astro:after-swap", reloadComments);
+        window.addEventListener('load', function () {
+            let iframe = document.querySelector("#cusdis_thread iframe");
+            if (iframe) {
+                let observer = new MutationObserver(() => {
+                    let scrollHeight = iframe.contentWindow.document.body.scrollHeight;
+                    iframe.style.height = scrollHeight + "px";
+                });
+                observer.observe(iframe.contentWindow.document.body, { childList: true, subtree: true });
+            }
+        });
+    </script>
 </div>
 <style>     
 #comments {

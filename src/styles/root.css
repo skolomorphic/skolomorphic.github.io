@@ -12,6 +12,13 @@ html, html.light {
     --accent-ultralight: #dcf0e8;
     --body-font: #0B0B0B;
     --commentbox-wrapper: var(--accent-ultralight);
+    --insect-navlink-bg: var(--accent-dark);
+    --insect-navlink-text: var(--accent-light);
+    --insect-navlink-bg-hover: var(--accent-contrast-light);
+    --insect-navlink-text-hover: var(--accent-contrast-dark);
+    --insect-body-header: var(--accent-dark);
+    --reader-navbar-bg: var(--accent-dark);
+    --reader-navbar-links: var(--accent-light);
 }
 
 html.dark {
@@ -28,6 +35,13 @@ html.dark {
     --accent-ultralight: #172d24;
     --body-font: #e1e1e1;
     --commentbox-wrapper: var(--accent-midtone);
+    --insect-navlink-bg: var(--accent-light);
+    --insect-navlink-text: var(--accent-dark);
+    --insect-navlink-bg-hover: var(--accent-contrast-light);
+    --insect-navlink-text-hover: var(--accent-contrast-dark);
+    --insect-body-header: var(--accent-shadow);
+    --reader-navbar-bg: var(--accent-light);
+    --reader-navbar-links: var(--accent-dark);
 }
 
 @media screen and (prefers-color-scheme: dark) {

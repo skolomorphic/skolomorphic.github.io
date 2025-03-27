@@ -28,7 +28,7 @@ const { collectionName, headingsName } = Astro.props;
     width: 100%;
     margin: 0;
     padding: 10px;
-    background-color: var(--accent-dark);
+    background-color: var(--reader-navbar-bg);
     position: fixed;
     top: 0;
     left: 0;
@@ -73,7 +73,7 @@ const { collectionName, headingsName } = Astro.props;
     justify-content: space-evenly;
 }
 #navlinks a {
-    color: var(--accent-light);
+    color: var(--reader-navbar-links);
     text-decoration: none;
     padding: 16px 32px;
     font-size: 1.5rem;
@@ -85,7 +85,7 @@ const { collectionName, headingsName } = Astro.props;
     text-align: center;
 }
 #navlinks a:hover, #navlinks a:active {
-    color: var(--accent-light);
+    color: var(--reader-navbar-links);
     text-decoration: underline wavy var(--accent-contrast-light);
     transform: rotate(5deg);
     transition: all 0.1s ease-in-out;
@@ -157,7 +157,7 @@ const { collectionName, headingsName } = Astro.props;
 
     .mainlinkstoggle {
         display: initial;
-        color: var(--accent-light);
+        color: var(--reader-navbar-links);
         grid-area: linkmenu;
         margin: auto 10px auto auto;
     }
@@ -177,25 +177,6 @@ const { collectionName, headingsName } = Astro.props;
 
     .mainlinkstoggle:has(input[type="checkbox"]:checked) ~ #navlinks {
         height: auto;
-    }
-}
-
-@media screen and (prefers-color-scheme: dark) {
-    /* Dark mode styles */
-    .topnav {
-        background-color: var(--accent-light);
-    }
-
-    .mainlinkstoggle {
-        color: var(--accent-dark);
-    }
-
-    #navlinks a, #navlinks a:visited  {
-        color: var(--accent-dark);
-    }
-
-    #navlinks a:hover, #navlinks a:active {
-        color: var(--accent-dark);
     }
 }
 </style>

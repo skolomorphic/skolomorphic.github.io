@@ -92,9 +92,9 @@ h2 {
 .navlinks a, .navlinks a:visited {
     display: block;
     text-decoration: none;
-    background-color: var(--accent-dark);
+    background-color: var(--insect-navlink-bg);
     box-shadow: 5px 5px var(--accent-contrast-dark);
-    color: var(--accent-light);
+    color: var(--insect-navlink-text);
     padding: 5px 10px 5px 5px;
     margin: 5px 0;
     width: 100%;
@@ -119,8 +119,8 @@ h2 {
 
 .navlinks a:hover, .navlinks a:active {
     text-decoration: none;
-    background-color: var(--accent-contrast-light);
-    color: var(--accent-contrast-dark);
+    background-color: var(--insect-navlink-bg-hover);
+    color: var(--insect-navlink-text-hover);
     transition: all ease-in-out 0.1s;
 }
 
@@ -149,6 +149,12 @@ h2 {
     background-color: var(--body-bg);
     box-shadow: 10px 10px var(--accent-midtone);
     grid-area: main;
+}
+
+#observation-jar {
+    & h1, h2, h3, h4, h5, h6 {
+        color: var(--insect-body-header);
+    }
 }
 
 /* #observation-jar:before {
@@ -206,13 +212,13 @@ h2 {
     }
 }
 @media screen and (prefers-color-scheme: dark) {
-    .navlinks a, .navlinks a:visited {
-        background-color: var(--accent-light);
+    /* .navlinks a, .navlinks a:visited {
+        background-color: var(--insect-navlink-bg);
         color: var(--accent-dark);
     }
 
     .navlinks a:hover, .navlinks a:active {
         background-color: var(--accent-contrast-light);
         color: var(--accent-contrast-dark);
-    }
+    } */
 }

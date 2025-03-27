@@ -10,7 +10,7 @@
      */
     function populateLikeButton(doc) {
         var likeButtonElements = doc.querySelectorAll('.mylikebutton');
-        console.log('likebuttonelements:', likeButtonElements);
+        // console.log('likebuttonelements:', likeButtonElements);
 
         if (likeButtonElements.length === 0) return;
 
@@ -53,14 +53,14 @@
             var container = likeButtonElement.parentElement;
             var popup = container.firstElementChild;
 
-            console.log('popup:', popup);
+            // console.log('popup:', popup);
             var counterDisplay = container.lastElementChild;
-            console.log('counterDisplay:', counterDisplay);
-            console.log('pageLikes', pageLikes);
+            // console.log('counterDisplay:', counterDisplay);
+            // console.log('pageLikes', pageLikes);
             counterDisplay.textContent = `(${pageLikes})`;
 
             // Handle click events on the button container
-            console.log('container:', container);
+            // console.log('container:', container);
             container.addEventListener('click', async function (event) {
                 if (localStorage.getItem(window.location.pathname + 'likes')) {
                     popup.textContent = "You've already liked this page!";

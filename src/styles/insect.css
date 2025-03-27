@@ -118,7 +118,7 @@ h2 {
     transition: all ease-in-out 0.1s;
 }
 
-.navlinks a::before, a::after {
+.navlinks a::before, .navlinks a::after {
     content: '𓆦';
     display: inline-block;
     margin-left: 5px;

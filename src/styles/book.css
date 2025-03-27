@@ -3,7 +3,7 @@
     --default-font-size: 16px;
     --default-p-spacing: 32px;
     --default-line-height: 24px;
-    --default-font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+    --default-font-family: 'Noto Sans', 'Trebuchet MS', Verdana, Arial, sans-serif;
 
     /** set changeable variables */
     --reader-font-size: var(--default-font-size);

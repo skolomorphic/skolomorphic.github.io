@@ -62,4 +62,10 @@ const nextText = chapter >= size ? "Back to Index" : `Chapter ${chapter + 1}`;
         line-height: 24px;
     }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  #chapternav {
+    border-color: var(--accent-light);
+  }
+}
 </style>

@@ -1,7 +1,29 @@
-blockquote {
+#book-content {
+    /** set default variables for restoring */
+    --default-font-size: 16px;
+    --default-p-spacing: 32px;
+    --default-line-height: 24px;
+    --default-font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+
+    /** set changeable variables */
+    --reader-font-size: var(--default-font-size);
+    --reader-code-size: calc(var(--reader-font-size) - 2px);
+    --reader-p-spacing: var(--default-p-spacing);
+    --reader-blockp-spacing: calc(var(--reader-p-spacing) - 16px);
+    --reader-line-height: var(--default-line-height);
+    --reader-font-family: var(--default-font-family);
+
+    /** explicitly set values */
+    font-family: var(--reader-font-family);
+    line-height: var(--reader-line-height);
+    font-size: var(--reader-font-size);
+}
+#book-content blockquote {
     border-left: 3px solid var(--accent-light);
     margin-left: 0;
     padding-left: 2rem;
+    margin-bottom: var(--reader-p-spacing);
+    margin-top: var(--reader-p-spacing);
 }
 .chapter-number {
     text-align: center;
@@ -48,4 +70,15 @@ hr::before {
     opacity: .6;
     z-index: -999;
 }
-
+#book-content p {
+    margin-bottom: var(--reader-p-spacing);
+}
+#book-content > blockquote p {
+    margin-bottom: var(--reader-blockp-spacing);
+}
+#book-content code {
+    background-color: var(--accent-ultralight);
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    font-size: var(--reader-code-size);
+}

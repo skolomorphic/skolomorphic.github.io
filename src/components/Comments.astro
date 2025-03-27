@@ -17,10 +17,11 @@ const { title } = Astro.props;
     <script is:inline>
         function reloadComments() {
             window.CUSDIS.initial();
+            fixIframe();
         }
-        document.addEventListener("astro:after-swap", reloadComments);
-        window.addEventListener('load', function () {
+        function fixIframe() {
             let iframe = document.querySelector("#cusdis_thread iframe");
+            console.log('iframe:', iframe);
             if (iframe) {
                 let observer = new MutationObserver(() => {
                     let scrollHeight = iframe.contentWindow.document.body.scrollHeight;
@@ -28,7 +29,9 @@ const { title } = Astro.props;
                 });
                 observer.observe(iframe.contentWindow.document.body, { childList: true, subtree: true });
             }
-        });
+        }
+        document.addEventListener("astro:after-swap", reloadComments);
+        window.addEventListener('load', function () { fixIframe() });
     </script>
 </div>
 <style>     

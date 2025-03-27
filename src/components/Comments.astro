@@ -5,7 +5,7 @@ const pathName = Astro.url.pathname;
 <div id="comments">
     <h1 class="comment-header">Comments</h1>
     <div class="notice">
-        <p>Hi! If you'd like to share your thoughts or ask a question, you can come visit me on <a href="http://skolomorphic.tumblr.com/">tumblr</a> or leave a comment below.</p>
+        <p>Hi! If you'd like to share your thoughts or ask a question, you can email me at <a>skolomorphic@protonmail.com</a>, visit me on <a href="http://skolomorphic.tumblr.com/">tumblr</a>, or leave a comment below.</p>
         <p>I look forward to hearing from you.</p>
         <p>Thanks for visiting my page!</p>
     </div>
@@ -31,37 +31,8 @@ const pathName = Astro.url.pathname;
         <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
         <script is:inline data-astro-rerun type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={}; console.log('hcb user?!', hcb_user);} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24xlen81zX4BBvw6b8mSiAp%2F"+"&opts=16798&num=10&ts=1742707546107");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
         <!-- end www.htmlcommentbox.com -->
-        <!-- <div class="commentbox"></div>
-        <script is:inline data-astro-rerun src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-        <script is:inline data-astro-rerun>commentBox('5759568818733056-proj', { subtextColor: '#461905'});</script> -->
+        <p id="commentcredit">Comments powered by <a href="https://www.htmlcommentbox.com/"><strong>HTML Comment Box</strong></a>.</p>
     </div>
-    <!-- <div id="cusdis-wrapper">
-        <div id="cusdis_thread"
-            data-host="https://cusdis.com"
-            data-app-id="30c5b5ed-36a7-4e9a-b102-12c5aa2b886f"
-            data-page-id={Astro.url.pathname}
-            data-page-url={Astro.url}
-            data-page-title={title}></div>
-    </div>
-    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-    <script is:inline data-astro-rerun>
-        function reloadComments() {
-            window.CUSDIS.initial();
-            fixIframe();
-        }
-        function fixIframe() {
-            let iframe = document.querySelector("#cusdis_thread iframe");
-            if (iframe) {
-                let observer = new MutationObserver(() => {
-                    let scrollHeight = iframe.contentWindow.document.body.scrollHeight;
-                    iframe.style.height = scrollHeight + "px";
-                });
-                observer.observe(iframe.contentWindow.document.body, { childList: true, subtree: true });
-            }
-        }
-        document.addEventListener("astro:after-swap", function () { reloadComments(); });
-        window.addEventListener('load', function () { fixIframe(); });
-    </script> -->
 </div>
 <style is:global>     
 #comments {
@@ -119,13 +90,21 @@ const pathName = Astro.url.pathname;
     color: var(--body-font);
     border: 1px solid var(--accent-midtone);
   }
-
-  /* #HCB_comment_box a:last-child {
-    color: var(--accent-contrast-light);
-  } */
-
-#HCB_comment_box a, #HCB_comment_box #hcb_form .home-desc a, #HCB_comment_box .home-desc a:visited {
+  #HCB_comment_box .home-desc {
+    display: none;
+  }
+#HCB_comment_box a {
     color: var(--accent-contrast-light);
     text-decoration: underline wavy var(--accent-contrast-light);
+}
+/* Rss feed */
+#HCB_comment_box a:last-child {
+    font-size: 14px;
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+}
+
+#commentcredit {
+    font-size: 14px;
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
 }
 </style>

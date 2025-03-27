@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import '../styles/book.css';
+import ReaderControls from "../components/ReaderControls.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import BookFooter from "../components/BookFooter.astro";
@@ -9,6 +10,10 @@ const allPages = Object.values(import.meta.glob('./*.md', { eager: true }));
 ---
 <BaseLayout pageTitle={frontmatter.title}>
     <Header />
+    <ReaderControls />
+    <script>
+        import "../scripts/readerControls.js";
+    </script>
     <div class="container">
         { frontmatter.chapter != null && frontmatter.chapter > 0 && <div class="chapter-number">{frontmatter.chapter <= 10 && '0'}{frontmatter.chapter}.</div> }
         <h1 class="chapter-title">{frontmatter.title}</h1>

@@ -39,16 +39,20 @@ document.querySelector('.changeGeorgia').addEventListener('click', () => {
     changeProperty('--reader-font-family', "Georgia, serif", '');
 });
 
-document.querySelector('.changeHelvetica').addEventListener('click', () => {
-    changeProperty('--reader-font-family', "Helvetica, sans-serif", '');
-});
-
 document.querySelector('.changeTrebuchet').addEventListener('click', () => {
     changeProperty('--reader-font-family', "'Trebuchet MS', sans-serif", '');
 });
 
 document.querySelector('.changeTimes').addEventListener('click', () => {
     changeProperty('--reader-font-family', "'Times New Roman', serif", '');
+});
+
+document.querySelector('.changeGaramond').addEventListener('click', () => {
+    changeProperty('--reader-font-family', "Garamond, serif", '');
+});
+
+document.querySelector('.changeTahoma').addEventListener('click', () => {
+    changeProperty('--reader-font-family', "Tahoma, sans-serif", '');
 });
 
 document.querySelector('.restoreDefaults').addEventListener('click', () => {

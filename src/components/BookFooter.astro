@@ -5,7 +5,7 @@ import LikeButton from "./LikeButton.astro";
 const { frontmatter, chapter, size, indexonly } = Astro.props;
 const date = new Date(frontmatter.lastEdit).toLocaleDateString().replaceAll('/', '.');
 ---
-<LikeButton />
+{ !Astro.url.hostname.includes('neocities') && <LikeButton /> }
 <div class="post-matter">
     { frontmatter.lastEdit && 
         <p class="last-edit"><span class="label">Last Updated:</span> {date}</p>

@@ -10,6 +10,7 @@ const allPages = Object.values(import.meta.glob('./*.md', { eager: true }));
 <BaseLayout pageTitle={frontmatter.title}>
     <Header />
     <div class="container">
+        { frontmatter.chapter != null && frontmatter.chapter > 0 && <div class="chapter-number">{frontmatter.chapter <= 10 && '0'}{frontmatter.chapter}.</div> }
         <h1 class="chapter-title">{frontmatter.title}</h1>
         <div class="chapter-heading-end"></div>
         <div id="book-content">

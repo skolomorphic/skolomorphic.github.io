@@ -1,0 +1,35 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import '../styles/root.css';
+import '../styles/insect.css';
+const { pageTitle } = Astro.props;
+---
+<BaseLayout>
+    <div id="wrapper">
+        <div align="center">
+            <div class="insect-deco">𓆨</div>
+            <div class="splash-header">skolomorphic</div>
+        </div>
+        <div style="display: flex; width: 100%;">
+            <div class="flex-side">
+                <nav>
+                    <ul class="navlinks">
+                        <li><a href="/">home</a></li>
+                        <li><a href="/projects">projects</a></li>
+                        <li><a href="/about">about</a></li>
+                        <li><a href="/credits">credits</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex-mainbody">
+                <div id="observation-jar">
+                    <div style="margin: 1rem; height: 100%; overflow: auto;">
+                        <div>
+                            <slot />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+---
+<div class="control-container" transition:persist>
+    <ul id="reader-controls" class="hidden">
+        <li><b>Font size:</b> <button type="button" class="decreaseFont">-</button> <button type="button" class="increaseFont">+</button></li>
+        <li><b>Line height:</b> <button type="button" class="decreaseLineHeight">-</button> <button type="button" class="increaseLineHeight">+</button></li>
+        <!-- <li><b>Paragraph spacing:</b> <button type="button">-</button> <button type="button">+</button></li>
+        <li><b>Theme:</b> <button type="button">Light</button> <button type="button">Dark</button></li> -->
+        <li><b>Font:</b> 
+            <button type="button" class="changeArial"><span style="font-family: Arial, sans-serif;">Arial</span></button> 
+            <button type="button" class="changeHelvetica"><span style="font-family: Helvetica, sans-serif;">Helvetica</span></button> 
+            <button type="button" class="changeGeorgia"><span style="font-family: Georgia, serif;">Georgia</span></button> 
+            <button type="button" class="changeTrebuchet"><span style="font-family: 'Trebuchet MS', serif;">Trebuchet</span></button> 
+            <button type="button" class="changeTimes"><span style="font-family: 'Times New Roman', serif;">Times</span></button>
+        </li>
+        <li><button type="button" class="restoreDefaults">Restore Defaults</button></li>
+    </ul>
+    <div class="control-toggle" align="right">
+        <box-icon name="cog" size="md" type="solid"></box-icon>
+    </div>
+</div>
+<style>
+#reader-controls {
+    list-style-type: none;
+    padding: 1rem;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 15px;
+    max-width: 200px;
+    margin: 0;
+}
+.control-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem;
+}
+.control-toggle {
+}
+.hidden {
+    display: none;
+}
+</style>

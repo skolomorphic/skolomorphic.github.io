@@ -1,0 +1,51 @@
+blockquote {
+    border-left: 3px solid var(--accent-light);
+    margin-left: 0;
+    padding-left: 2rem;
+}
+.chapter-number {
+    text-align: center;
+    font-size: 72px;
+    color: var(--accent-light);
+    margin-top: 50px;
+    font-family: 'Astloch', 'Open Sans', sans-serif;
+}
+.chapter-title {
+    font-family: 'Flamenco', 'Open Sans', sans-serif;
+    color: var(--accent-dark);
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    font-variant: normal;
+}
+.chapter-heading-end {
+    margin: 30px auto 60px;
+    max-width: 20ch;
+    border-bottom: 3px dotted var(--accent-midtone);
+}
+.container {
+    margin-top: 80px;
+    max-width: 70ch;
+}
+hr {
+    color: var(--accent-light);
+    text-align: center;
+    display: block;
+    line-height: 1px;
+    height: 1px;
+    margin: 2rem auto;
+    width: 80%;
+}
+hr::before {
+    content: '\00A7';
+    font-family:'Times New Roman', Times, serif;
+    color: var(--accent-light);
+    font-size: 4rem;
+    position: absolute;
+    left: 50%;
+    transform: rotate(90deg);
+    transform-origin: center;
+    opacity: .6;
+    z-index: -999;
+}
+

@@ -1,0 +1,43 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import '../styles/book.css';
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import BookFooter from "../components/BookFooter.astro";
+const { frontmatter, postsize } = Astro.props;
+const allPages = Object.values(import.meta.glob('./*.md', { eager: true }));
+---
+<BaseLayout pageTitle={frontmatter.title}>
+    <Header />
+    <div class="container">
+        <h1 class="chapter-title">{frontmatter.title}</h1>
+        <div class="chapter-heading-end"></div>
+        <div id="book-content">
+            <slot />
+        </div>
+        <script>
+            import "../scripts/readerControls.js";
+        </script>
+
+        <BookFooter frontmatter={frontmatter} chapter={frontmatter.chapter} size={postsize} indexonly=false />
+    </div>
+    <Footer />
+    <script is:inline>
+        function setReaderSettings(document) {
+            console.log('reader settings called');
+            let settings = ['font-family', 'line-height', 'font-size'];
+            let bookContent = document.getElementById('book-content');
+            console.log(bookContent);
+            settings.forEach((s) => bookContent.style.setProperty(s, localStorage.getItem(s)));
+            // let theme = localStorage.darkMode ? "dark" : "light";
+            // document.documentElement.dataset.theme = theme;
+        }
+
+        setReaderSettings(document);
+
+        document.addEventListener("astro:before-swap", (event) => {
+            // Pass the incoming document to set the theme on it
+            setReaderSettings(event.newDocument);
+        });
+    </script>
+</BaseLayout>

@@ -14,6 +14,9 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const chapter = Number(post.id);
 ---
-<BookLayout frontmatter={post.data} postsize={posts.length}>
+<BookLayout frontmatter={post.data} 
+  postsize={posts.length} 
+  collectionName="proofOfExistence"
+  headingsName="poeArcs" >
     <Content />
 </BookLayout>

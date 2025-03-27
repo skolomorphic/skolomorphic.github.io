@@ -156,8 +156,18 @@
         menu?.classList.toggle('hidden');
         document.querySelector('.mainlinkstoggle')?.classList.toggle('rotated');
     }
-    document.querySelector('.mainlinkstoggle').addEventListener('click', () => {
+    document.querySelector('.mainlinkstoggle')?.addEventListener('click', () => {
         console.log('event fired');
         toggleMenu();
+    });
+    window.addEventListener("resize", function () {
+        if (window.innerWidth <= 600) {
+            document.getElementById('navlinks')?.classList.add('hidden');
+            document.querySelector('.mainlinkstoggle')?.classList.remove('rotated')
+        } else {
+            document.getElementById('navlinks')?.classList.remove('hidden');
+            document.querySelector('.mainlinkstoggle')?.classList.remove('rotated')
+        }
+        
     });
 </script>

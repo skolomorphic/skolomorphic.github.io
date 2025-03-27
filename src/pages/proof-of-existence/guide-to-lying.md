@@ -3,6 +3,7 @@ layout: "../../layouts/BookLayout.astro"
 title: "Jeong Eunseok's Guide to Lying Without Lying"
 chapter: 0
 lastEdit: 2025-03-12
+collectionName: 'proofOfExistence'
 ---
 Honesty is very simple: Nothing you say can technically be a lie. 
 

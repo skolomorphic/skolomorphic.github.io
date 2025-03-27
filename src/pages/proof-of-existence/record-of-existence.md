@@ -3,6 +3,7 @@ layout: "../../layouts/BookLayout.astro"
 title: "Jeong Eunseok's Record of Existence"
 chapter: 0
 lastEdit: 2025-03-12
+collectionName: 'proofOfExistence'
 ---
 
 This is a record of what has been revealed from Jeong Eunseok’s Record of Existence in the story thus far. 

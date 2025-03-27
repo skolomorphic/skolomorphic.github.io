@@ -1,0 +1,167 @@
+---
+---
+<script is:inline data-astro-rerun>
+    /**
+     * This script was created by Fritzi at https://bohemiansultriness.nekoweb.org/goodies/mylikebutton.txt
+     * If you want to implement your own, go check her website out! 
+     * 
+     * https://docs.google.com/forms/d/e/1FAIpQLSeTrIcD659ldpw6AwCfWL964FCA80e-Jsc5CzqsfwqrhIBTxw/viewform?usp=pp_url&entry.1797685375=pref1&entry.988054089=pref2
+     * https://docs.google.com/spreadsheets/d/1j3y9otFyeJMvRcUJXTcaMCr0acLAuD0p9zHxeXRc31Y/edit?usp=sharing
+     */
+    function populateLikeButton(doc) {
+        var likeButtonElements = doc.querySelectorAll('.mylikebutton');
+        console.log('likebuttonelements:', likeButtonElements);
+
+        if (likeButtonElements.length === 0) return;
+
+        // Get the current page path (use 'home' for root or index pages)
+        var currentPath = window.location.pathname;
+        var pagePath = currentPath === '/' || currentPath.endsWith('index.html') 
+            ? 'home' 
+            : currentPath.replace(/^\/|\/$/g, ''); // Remove leading/trailing slashes
+
+        // Google Form and Sheet details
+        const GOOGLE_FORM_ID = "1FAIpQLSeTrIcD659ldpw6AwCfWL964FCA80e-Jsc5CzqsfwqrhIBTxw";
+        const EMOJI_ENTRY_ID = "entry.1797685375"; // Entry ID for emoji field
+        const PAGE_ENTRY_ID = "entry.988054089"; // Entry ID for page path field
+        const GOOGLE_SHEET_ID = "1j3y9otFyeJMvRcUJXTcaMCr0acLAuD0p9zHxeXRc31Y";
+        const GOOGLE_SHEET_URL = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/export?format=csv`;
+        const GOOGLE_FORM_URL = `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/formResponse`;
+
+        // Fetch like counts for the current page from Google Sheet
+        async function fetchLikeCounts() {
+            try {
+                const response = await fetch(GOOGLE_SHEET_URL);
+                const data = await response.text();
+                
+                // Split CSV data into rows
+                const rows = data.split('\n').slice(1); // Skip header row
+                
+                // Count rows that match the current page path
+                const pageCount = rows.filter(row => row.includes(pagePath)).length;
+
+                return pageCount; // Return the count of likes for this page
+            } catch (error) {
+                console.error("Error fetching like counts:", error);
+                return 0; // Default to zero likes on error
+            }
+        }
+
+        likeButtonElements.forEach(async function (likeButtonElement) {
+            let pageLikes = await fetchLikeCounts(); // Fetch initial like count for this page
+
+            var container = likeButtonElement.parentElement;
+            var popup = container.firstElementChild;
+
+            console.log('popup:', popup);
+            var counterDisplay = container.lastElementChild;
+            console.log('counterDisplay:', counterDisplay);
+            console.log('pageLikes', pageLikes);
+            counterDisplay.textContent = `(${pageLikes})`;
+
+            // Handle click events on the button container
+            console.log('container:', container);
+            container.addEventListener('click', async function (event) {
+                if (localStorage.getItem(window.location.pathname + 'likes')) {
+                    popup.textContent = "You've already liked this page!";
+                    popup.style.display = 'inline-block';
+
+                    setTimeout(function () {
+                        popup.style.display = 'none';
+                    }, 3000);
+                    return;
+                } 
+
+                pageLikes++; // Increment local like count immediately for feedback
+                localStorage.setItem(window.location.pathname+'likes', 'clicked'); // add to liked pages
+                counterDisplay.textContent = `(${pageLikes})`;
+
+                try {
+                    // Prepare form data with emoji and page path
+                    const formData = new FormData();
+                    formData.append(EMOJI_ENTRY_ID, likeButtonElement.textContent);
+                    formData.append(PAGE_ENTRY_ID, pagePath);
+
+                    await fetch(GOOGLE_FORM_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        body: formData,
+                    });
+
+                    // Show a feedback popup near the click location
+                    popup.textContent = "Thank you for liking this page!";
+                    popup.style.display = 'inline-block';
+
+                    const popupRect = popup.getBoundingClientRect();
+                    let left = event.clientX + 10;
+                    let top = event.clientY + 10;
+
+                    if (left + popupRect.width > window.innerWidth) {
+                        left = window.innerWidth - popupRect.width - 10;
+                    }
+
+                    if (top + popupRect.height > window.innerHeight) {
+                        top = window.innerHeight - popupRect.height - 10;
+                    }
+
+                    popup.style.left = `${left}px`;
+                    popup.style.top = `${top}px`;
+
+                    setTimeout(function () {
+                        popup.style.display = 'none';
+                    }, 3000);
+
+                    // Refetch updated like counts from Google Sheet after submission
+                    pageLikes = await fetchLikeCounts();
+                    counterDisplay.textContent = `(${pageLikes})`;
+                    
+                } catch (error) {
+                    console.error("Error submitting like to Google Form:", error);
+                    alert("Something went wrong. Please try again.");
+                }
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () { populateLikeButton(document); });
+    document.addEventListener('astro:page-load', (event) => { populateLikeButton(document); });
+</script>
+<div class="mylikebutton-container" role="button" aria-label="Click to like!">
+    <div class="mylikebutton-popup"></div>
+    <div class="mylikebutton">♥</div>
+    <div class="mylikebutton-counter"></div>
+</div>
+<style>
+    .mylikebutton-container {
+        display: block;
+        text-align: right;
+        cursor: pointer;
+        color: var(--accent-dark);
+        font: 14px "Source Code Pro", "Courier", monospace;
+    }
+    .mylikebutton {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 30px;
+    }
+    .mylikebutton-counter {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 2px;
+    }
+    .mylikebutton-popup {
+        vertical-align: middle;
+        display: none;
+        z-index: 9999;
+        max-width: 300px;
+        padding: 8px;
+        background: var(--accent-ultralight);
+        border: var(--accent-dark);
+        color: var(--accent-dark);
+        pointer-events: none;
+        margin: 0px 3px; 
+        border-radius: 3px;
+    }
+</style>
+<!-- <div class="mylikebutton">♥</div> -->
+

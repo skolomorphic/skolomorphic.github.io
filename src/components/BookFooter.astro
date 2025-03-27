@@ -1,9 +1,11 @@
 ---
 import ChapterNav from "./ChapterNav.astro";
 import Comments from "./Comments.astro";
+import LikeButton from "./LikeButton.astro";
 const { frontmatter, chapter, size, indexonly } = Astro.props;
 const date = new Date(frontmatter.lastEdit).toLocaleDateString().replaceAll('/', '.');
 ---
+<LikeButton />
 <div class="post-matter">
     { frontmatter.lastEdit && 
         <p class="last-edit"><span class="label">Last Updated:</span> {date}</p>
@@ -22,7 +24,6 @@ const date = new Date(frontmatter.lastEdit).toLocaleDateString().replaceAll('/',
 .post-matter {
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
-    padding-top: 20px;
 }
 .last-edit {
     text-align: right;

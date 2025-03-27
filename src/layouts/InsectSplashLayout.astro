@@ -1,11 +1,15 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import DarkModeToggle from '../components/DarkModeToggle.astro';
 import '../styles/root.css';
 import '../styles/global.css';
 import '../styles/insect.css';
 const { pageTitle } = Astro.props;
 ---
 <BaseLayout pageTitle={pageTitle}>
+    <div id="darkmodetoggle">
+        <DarkModeToggle />
+    </div>
     <div id="wrapper">
         <div id="insect-header" align="center">
             <div class="insect-deco">𓆨</div>

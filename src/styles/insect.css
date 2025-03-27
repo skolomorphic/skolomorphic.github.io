@@ -73,6 +73,12 @@ h2 {
     color: var(--accent-midtone);
 }
 
+#darkmodetoggle {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
 /** NAVLINKS */
 
 .navlinks {

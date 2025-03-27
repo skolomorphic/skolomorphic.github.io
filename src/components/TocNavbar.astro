@@ -21,8 +21,9 @@ const collection = await getCollection(collectionName);
     <div id="menu">
         <div class="menucontent">
             <h3>Table of Contents</h3>
+                <a href={`./`}>Index</a>
             { collection.map((page) => 
-                <li><a href={`/proof-of-existence/${page.id}/`}>{page.data.title}</a></li>
+                <a href={`/proof-of-existence/${page.id}/`}>{page.data.title}</a>
             )}
         </div>
     </div>
@@ -123,5 +124,17 @@ const collection = await getCollection(collectionName);
 .menucontent {
     height: 100%;
     overflow: auto;
+}
+/** style links */
+.menucontent a {
+  display: block;
+  padding: 10px;
+  transition: all 0.1s ease;
+  border-top: 1px solid var(--accent-light);
+  text-decoration: none;
+}
+.menucontent a:hover {
+  background-color: var(--accent-light);
+  transition: all 0.1s ease;
 }
  </style>

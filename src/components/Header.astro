@@ -13,7 +13,7 @@ const { collectionName, headingsName } = Astro.props;
     <div class="mainlinkstoggle">
         <input type="checkbox" id="togglemenu">
         <label for="togglemenu" id="togglemenu-label">
-            <i class="fas fa-chevron-down" id="togglemenu-icon"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" style="padding-top: 7px" width="40" height="40" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 8l8 8l8-8"/></svg>
         </label>
     </div>
     <nav id="navlinks">
@@ -129,11 +129,12 @@ const { collectionName, headingsName } = Astro.props;
 
 #togglemenu-label {
     border-radius: 15px;
-    padding: 5px;
+    display: inline-block;
 }
 
 @media screen and (max-width: 1100px) {
     .topnav {
+        grid-gap: 0;
         grid-template: 
             "toc logo linkmenu"
             "links links links"

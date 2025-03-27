@@ -83,3 +83,16 @@ hr::before {
     padding: 1px 3px;
     font-size: var(--reader-code-size);
 }
+#book-content .announcement {
+    background-color: var(--accent-ultralight);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', 'Source Code Pro', 'Courier New', Courier, monospace;
+    font-size: var(--reader-code-size);
+}
+#book-content .announcement p {
+    margin-bottom: 0;
+}
+#book-content .announcement p:first-child {
+    margin-top: 0;
+}

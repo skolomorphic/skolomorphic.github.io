@@ -3,10 +3,12 @@ import TocNavbar from "./TocNavbar.astro"
 const { collectionName, headingsName } = Astro.props;
 ---
 <header class="topnav">
-    <div class="toc">
-        <TocNavbar collectionName={collectionName}
-            headingsName={headingsName} />
-    </div>
+    { collectionName && 
+        <div class="toc">
+            <TocNavbar collectionName={collectionName}
+                headingsName={headingsName} />
+        </div>
+    }
     <div class="logo">skolomorphic</div>
     <div class="mainlinkstoggle">
         <input type="checkbox" id="togglemenu">

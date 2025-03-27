@@ -78,7 +78,8 @@ hr::before {
 }
 #book-content code {
     background-color: var(--accent-ultralight);
-    font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Mono', 'Source Code Pro', 'Courier New', Courier, monospace;
     border-radius: 5px;
+    padding: 1px 3px;
     font-size: var(--reader-code-size);
 }

@@ -1,3 +1,116 @@
 ---
-const { collection, metadata } = Astro.props;
+const { collection, hasSubheadings, headingsMetadata } = Astro.props;
 ---
+<div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <div id="menu">
+        <div class="menucontent">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Info</a>
+            <a href="#">Contact</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+ </div>
+ <style>
+#menuToggle {
+  padding: 10px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 6;
+}
+
+#menuToggle span
+{
+  display: flex;
+  width: 34px;
+  height: 2px;
+  margin: 7px 0;
+  position: relative;
+  background: var(--accent-light);
+  border-radius: 3px;
+  z-index: 5;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease, 
+              width 0.5s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: var(--accent-dark);
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+/** MENU DRAWER */
+#menu {
+  position: fixed;
+  max-width: 40ch;
+  height: 100vh;
+  border-right: 1px solid var(--accent-light);
+  /* box-shadow: 0 0 10px var(--accent-contrast-dark); */
+  top: 0;
+  left: 0;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: var(--main-bg-color);
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  z-index: 4;
+}
+
+#menu #menucontent
+{
+  padding: 10px 0;
+  transition-delay: 2s;
+}
+
+#menuToggle input:checked ~ div
+{
+  transform: none;
+}
+
+.menucontent {
+    height: 100%;
+    overflow: auto;
+}
+ </style>

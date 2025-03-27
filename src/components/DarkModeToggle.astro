@@ -3,8 +3,12 @@
 <div class="dark-mode-toggle" align="right">
     <input type="checkbox" class="checkbox" id="checkbox">
     <label for="checkbox" class="checkbox-label">
-      <i class="fas fa-moon"></i>
-      <i class="fas fa-sun"></i>
+      <span class="moon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 3c.575 0 .66.82.178 1.134a7 7 0 0 0 6.432 12.363c.479-.192 1.023.301.724.721A9 9 0 1 1 12 3" clip-rule="evenodd"/></svg>
+      </span>
+      <span class="sun">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M16 12a4 4 0 1 1-8 0a4 4 0 0 1 8 0"/><path fill="currentColor" fill-rule="evenodd" d="M9.017 2.8a1 1 0 0 0-1.562.664l-.442 2.82a1 1 0 0 1-.815.831l-2.812.493a1 1 0 0 0-.636 1.574l1.683 2.306a1 1 0 0 1 .01 1.164l-1.64 2.337a1 1 0 0 0 .664 1.562l2.82.442a1 1 0 0 1 .83.815l.493 2.812a1 1 0 0 0 1.574.636l2.307-1.683a1 1 0 0 1 1.164-.01l2.336 1.64a1 1 0 0 0 1.563-.664l.44-2.82a1 1 0 0 1 .817-.83l2.812-.493a1 1 0 0 0 .635-1.574l-1.682-2.307a1 1 0 0 1-.011-1.164l1.64-2.336a1 1 0 0 0-.663-1.563l-2.821-.441a1 1 0 0 1-.83-.816l-.493-2.812a1 1 0 0 0-1.574-.635L12.518 4.43a1 1 0 0 1-1.164.01zM17 12a5 5 0 1 1-10 0a5 5 0 0 1 10 0" clip-rule="evenodd"/></svg>
+      </span>
       <span class="ball"></span>
     </label>
 </div>
@@ -32,9 +36,11 @@
   align-items: center;
 }
 
-.fa-moon { color: var(--accent-contrast-light); }
+.moon { color: var(--accent-contrast-light); }
 
-.fa-sun { color: var(--accent-light); }
+.sun { color: var(--accent-light); }
+
+.sun, .moon { padding-top: 4px; }
 
 .checkbox-label .ball {
   background-color: var(--main-bg-color);

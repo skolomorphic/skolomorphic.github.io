@@ -1,8 +1,8 @@
 ---
 const { chapter, size, isIndexOnly } = Astro.props;
-const prevLink = chapter <= 1 ? `./` : `./${chapter - 1}`;
+const prevLink = chapter <= 1 ? `../` : `../${chapter - 1}/`;
 const prevText = chapter <= 1 ? "Back to Index" : `Chapter ${chapter - 1}`;
-const nextLink = chapter >= size ? './' : `./${chapter + 1}`;
+const nextLink = chapter >= size ? '../' : `../${chapter + 1}/`;
 const nextText = chapter >= size ? "Back to Index" : `Chapter ${chapter + 1}`;
 ---
 <div id="chapternav">

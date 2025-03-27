@@ -11,6 +11,7 @@ html, html.light {
     --accent-light: #9dcbb8;
     --accent-ultralight: #dcf0e8;
     --body-font: #0B0B0B;
+    --commentbox-wrapper: var(--accent-ultralight);
 }
 
 html.dark {
@@ -26,6 +27,7 @@ html.dark {
     --accent-light: #103d2a;
     --accent-ultralight: #172d24;
     --body-font: #e1e1e1;
+    --commentbox-wrapper: var(--accent-midtone);
 }
 
 @media screen and (prefers-color-scheme: dark) {

@@ -59,5 +59,13 @@ html.dark {
         --accent-light: #103d2a;
         --accent-ultralight: #172d24;
         --body-font: #c4c4c4;
+        --commentbox-wrapper: var(--accent-midtone);
+        --insect-navlink-bg: var(--accent-light);
+        --insect-navlink-text: var(--accent-dark);
+        --insect-navlink-bg-hover: var(--accent-contrast-light);
+        --insect-navlink-text-hover: var(--accent-contrast-dark);
+        --insect-body-header: var(--accent-shadow);
+        --reader-navbar-bg: var(--accent-light);
+        --reader-navbar-links: var(--accent-dark);
     }
 }

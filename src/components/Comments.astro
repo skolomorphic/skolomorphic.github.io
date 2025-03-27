@@ -21,7 +21,6 @@ const { title } = Astro.props;
         }
         function fixIframe() {
             let iframe = document.querySelector("#cusdis_thread iframe");
-            console.log('iframe:', iframe);
             if (iframe) {
                 let observer = new MutationObserver(() => {
                     let scrollHeight = iframe.contentWindow.document.body.scrollHeight;

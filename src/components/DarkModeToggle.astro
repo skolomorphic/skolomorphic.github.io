@@ -51,7 +51,7 @@
   transform: translateX(24px);
 }
 </style>
-<script is:inline >
+<script is:inline data-astro-rerun>
   function toggleTheme(useDark) {
     if (useDark) {
       document.documentElement.classList.add("dark");
@@ -66,10 +66,10 @@
   }
 
   function setInitialTheme() {
-    console.log('setinitialtheme');
+    console.log('setinitialtheme localstorage:', localStorage.getItem('theme'));
     const useDark = (window.matchMedia && 
                     window.matchMedia('(prefers-color-scheme: dark)').matches)
-                    && localStorage.getItem('theme') !== 'light';
+                    || localStorage.getItem('theme') === 'dark';
     document.getElementById("checkbox").checked = useDark;
     toggleTheme(useDark);
   }

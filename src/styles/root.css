@@ -32,6 +32,7 @@ html.dark {
     --accent-light: #103d2a;
     --accent-ultralight: #172d24;
     --body-font: #e1e1e1;
+    --accent-contrast-light: #ff7a41;
     --commentbox-wrapper: var(--accent-midtone);
     --insect-navlink-bg: var(--accent-light);
     --insect-navlink-text: var(--accent-dark);

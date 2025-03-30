@@ -3,6 +3,7 @@
 <div class="dark-mode-toggle" align="right">
     <input type="checkbox" class="checkbox" id="checkbox">
     <label for="checkbox" class="checkbox-label">
+      <span class="dark-mode-label">Toggle Dark Mode</span>
       <span class="moon">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 3c.575 0 .66.82.178 1.134a7 7 0 0 0 6.432 12.363c.479-.192 1.023.301.724.721A9 9 0 1 1 12 3" clip-rule="evenodd"/></svg>
       </span>
@@ -17,6 +18,9 @@
     position: relative;
     padding-left: 10px;
     display: inline-block;
+}
+.dark-mode-label {
+  width: 0; height: 0; overflow: hidden;
 }
 .checkbox {
   display: none;

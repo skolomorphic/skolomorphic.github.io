@@ -56,7 +56,7 @@ This is not a complete record.
 > 
 > **Description:** Acacius Duval’s former World Proof. The power of a calculating mind that constantly evaluates others and describes others truly, even if it seems untrue. That which is hidden, or that which has not yet become true, shall surely be brought into the light. 
 > 
-> **Title Skill:** The title bearer can forcibly bestow whoever the knife cuts with a title borrowed from the future. The more powerful the title, the farther the future, and the longer the duration, the more vitality the title bearer must sacrifice in return. 
+> **Title Skill:** The title bearer can forcibly bestow whoever the knife cuts with a title borrowed from the future. The more powerful the title and the farther the future, the more vitality the title bearer must sacrifice in return. 
 > - If the target does not fulfill the requirements of the borrowed title through natural means by the time the future becomes the present, they will die. 
 
 ### [Executor of the Sacrifice’s Last Will]

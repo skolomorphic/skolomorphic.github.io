@@ -67,7 +67,7 @@ This is not a complete record.
 > 
 > **Passive Effect:** You have an affinity for certain voices of the dead. 
 > 
-> **Note:** This title is borrowed from the future. If you do not achieve the conditions to make it true within 3 years, you will die. 
+> **Note:** This title is borrowed from the future. If you do not achieve the conditions to make it true within 2 years, you will die. 
 
 ### [Bound Prophet of the Single Path]
 

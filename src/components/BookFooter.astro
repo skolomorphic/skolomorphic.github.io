@@ -10,9 +10,9 @@ const date = new Date(frontmatter.lastEdit).toLocaleDateString().replaceAll('/',
     { frontmatter.lastEdit && 
         <p class="last-edit"><span class="label">Last Updated:</span> {date}</p>
     }
-    { frontmatter.characters && 
+    { frontmatter.tags && 
         <p><span class="label">Tags:</span> 
-            {frontmatter.characters.map((character: any) => 
+            {frontmatter.tags.map((character: any) => 
                 <span class="tag">{character}</span> 
             )}
         </p>

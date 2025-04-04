@@ -11,7 +11,6 @@ const proofOfExistence = defineCollection({
         title: z.string(),
         arc: z.number(),
         chapter: z.number(),
-        characters: z.array(z.string()),
         warnings: z.array(z.string()).optional(),
         tags: z.array(z.string()).optional(),
         lastEdit: z.date()

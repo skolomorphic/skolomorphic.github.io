@@ -1,5 +1,8 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+const parser = new MarkdownIt();
 
 export async function GET(context) {
     const poe = await getCollection('proofOfExistence');
@@ -15,7 +18,11 @@ export async function GET(context) {
         // See "Generating items" section for examples using content collections and glob imports
         items: poe.map((chapter) => ({
             title: chapter.data.title,
-            link: `/proof-of-existence/${chapter.id}`
+            pubDate: chapter.data.pubDate,
+            content: sanitizeHtml(parser.render(chapter.body), {
+                allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
+            }),
+            link: `/proof-of-existence/${chapter.id}/`
         })),
         // (optional) inject custom xml
         customData: `<language>en-us</language>`,

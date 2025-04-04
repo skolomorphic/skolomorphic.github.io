@@ -13,6 +13,7 @@ const proofOfExistence = defineCollection({
         chapter: z.number(),
         warnings: z.array(z.string()).optional(),
         tags: z.array(z.string()).optional(),
+        pubDate: z.date(),
         lastEdit: z.date()
     })
 });

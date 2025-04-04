@@ -19,4 +19,10 @@ const chapter = Number(post.id);
   collectionName="proofOfExistence"
   headingsName="poeArcs" >
     <Content />
+  { post.data.authorsNotes &&
+    <div style="padding-top: 3rem;">
+      <h2 style="border-bottom: double var(--accent-dark);">Author's Notes</h2>
+      <div set:html={post.data.authorsNotes}></div>
+    </div>
+  }
 </BookLayout>

@@ -37,7 +37,7 @@ collectionName: 'proofOfExistence'
 
 **Linden Morgan:** A red-haired young man talented with aura and the sword. He is Acacius’ older half-brother, but for unknown reasons, has run away from home and disowned himself from the Duval family. 
 
-**Luka Reviance:** Acacius’ classmate and probable enemy, who the original Acacius insisted must be killed. Has black hair, slitted red eyes, and long gold earrings. He seems to have some unimaginable secrets hidden in his past. 
+**Luka Reviance:** Acacius’ classmate and enemy, whom the original Acacius insisted must be killed. Has black hair, slitted red eyes, and long gold earrings. He seems to have some unimaginable secrets hidden in his past. He intends to kill Acacius in two years.
 
 **Mehran Sattari:** Acacius’ classmate. Has some leadership skills, but not enough confidence. He usually wears a headband, vest, sash, and loose trousers. A member of the three Great Families. 
 

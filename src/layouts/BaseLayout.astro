@@ -3,6 +3,7 @@ import '../styles/root.css';
 import '../styles/global.css';
 import { ClientRouter } from "astro:transitions";
 const { pageTitle } = Astro.props;
+const isPoe = Astro.url.pathname.includes('proof-of-existence');
 ---
 
 <html lang="en">
@@ -17,6 +18,13 @@ const { pageTitle } = Astro.props;
 		<meta name="description" content="skolomorphic's personal website" />
 		<title>{pageTitle}</title>
 		<ClientRouter />
+		{
+			isPoe &&
+			<link rel="alternate" type="application/rss+xml"
+				title="Proof of Existence | skolomorphic"
+				href={new URL("/proof-of-existence/poe-rss.xml", Astro.site)}
+			/>
+		}
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

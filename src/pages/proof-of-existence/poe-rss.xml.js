@@ -6,9 +6,10 @@ const parser = new MarkdownIt();
 
 export async function GET(context) {
     const poe = await getCollection('proofOfExistence');
+    poe.sort((a, b) => b.chapter - a.chapter);
     return rss({
         // `<title>` field in output xml
-        title: 'Proof of Existence',
+        title: 'Proof of Existence (@skolomorphic)',
         // `<description>` field in output xml
         description: 'A transmigration fantasy by skolomorphic',
         // Pull in your project "site" from the endpoint context
@@ -17,8 +18,9 @@ export async function GET(context) {
         // Array of `<item>`s in output xml
         // See "Generating items" section for examples using content collections and glob imports
         items: poe.map((chapter) => ({
-            title: chapter.data.title,
+            title: `Chapter ${chapter.id}: ${chapter.data.title}`,
             pubDate: chapter.data.pubDate,
+            // content: chapter.body,
             content: sanitizeHtml(parser.render(chapter.body), {
                 allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
             }),

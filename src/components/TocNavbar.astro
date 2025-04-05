@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 }
 
 const collection = await getCollection(collectionName);
-collection.sort((a, b) => a.chapter - b.chapter);
+collection.sort((a, b) => a.data.chapter - b.data.chapter);
 ---
 { collectionName && 
 <div id="menuToggle">

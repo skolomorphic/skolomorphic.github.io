@@ -6,7 +6,7 @@ const parser = new MarkdownIt();
 
 export async function GET(context) {
     const poe = await getCollection('proofOfExistence');
-    poe.sort((a, b) => b.chapter - a.chapter);
+    poe.sort((a, b) => b.data.chapter - a.data.chapter);
     return rss({
         // `<title>` field in output xml
         title: 'Proof of Existence (@skolomorphic)',

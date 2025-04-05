@@ -3,7 +3,7 @@ import ChapterNav from "./ChapterNav.astro";
 import Comments from "./Comments.astro";
 import LikeButton from "./LikeButton.astro";
 const { frontmatter, chapter, size, indexonly } = Astro.props;
-const date = new Date(frontmatter.lastEdit).toLocaleDateString().replaceAll('/', '.');
+const date = new Date(frontmatter.lastEdit).toUTCString().slice(0, 16); //.toLocaleDateString().replaceAll('/', '.');
 ---
 { !Astro.url.hostname.includes('neocities') && <LikeButton /> }
 <div class="post-matter">

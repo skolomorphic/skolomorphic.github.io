@@ -79,4 +79,12 @@ This is not a complete record.
 > 
 > **Note:** Kosmonymia is watching you. 
 
+### [Inevitable Survivor of Disaster]
+
+> **Symbol:** Flames
+> 
+> **Description:** The results of one who has lived alongside danger and catastrophe all his life, yet escaped each time all the same, up until his chosen end. To brush by death so many times — is this unluckiness, or prescience? 
+> 
+> **Passive Effect:** As long as the title bearer is determined to survive, close observations of their surroundings will increase the accuracy of their danger and survival instincts. However, they will become more easily entangled in dangerous situations as well. 
+
 At the end of the Record are a number of blacked out pages.

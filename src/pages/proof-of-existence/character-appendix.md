@@ -2,9 +2,11 @@
 layout: "../../layouts/BookLayout.astro"
 title: "Character Appendix"
 chapter: 0
-lastEdit: 2025-03-12
+lastEdit: 2025-06-21
 collectionName: 'proofOfExistence'
 ---
+This page contains spoilers up to the most recent chapter. 
+
 **Acacius Duval:** The apparent heir to the Duval family. He seems to have had many plans in the works when he summoned Jeong Eunseok and lost everything to him. He has tan skin, rose-gold hair that is usually combed back, and sharp amber eyes. He is in a faction opposed to the three Great Families.
 
 **Bakhta Burzinski:** The school librarian. No-nonsense, but never one to look down on one’s pursuit of knowledge, wherever they might be in their journey. She has dark skin and curly gray hair, and likes floral patterns. 
@@ -15,7 +17,7 @@ collectionName: 'proofOfExistence'
 
 **Dagian Naveen:** Acacius’ classmate. Fights with light and a golden scythe. She has long, wavy, dark purple hair, and wears a gold circlet and bangles. 
 
-**Dalileh Khan:** The Practical Combat teacher and a veteran from the Rainy Wars. She uses water magic and enjoys adding aesthetic effects to her spells. A fashionable woman with dark hair, brown skin, and a wide smile. Students should address her as “Master Dalileh.” 
+**Dalileh Khan:** The Practical Combat teacher and a veteran from the Rainy Wars, who earned herself the nickname "Unrelenting Storm." She uses water magic and enjoys adding aesthetic effects to her spells. A fashionable woman with dark hair, brown skin, and a wide smile. Students should address her as “Master Dalileh.” 
 
 **Dreyminn:** Luka’s crow spirit friend. It has a silver sigil between its eyes and unknown capabilities. Acacius and his friend Zaire once kidnapped this crow spirit for unknown reasons. 
 
@@ -31,7 +33,7 @@ collectionName: 'proofOfExistence'
 
 **Jules:** Acacius’ classmate. A blind girl dressed in red, with an excellent sense of style and a great interest in matters of the law. 
 
-**Linden:** A red-haired young man talented with aura and the sword. Somehow related to Acacius.
+**Linden:** Acacius' older half-brother. A red-haired young man talented with aura and the sword. He ran away from the Duval family and found protection with the Morgans. Close with Xander and Cynara, but hates Acacius for the death of their older brother. 
 
 **Luka Reviance:** Acacius’ classmate and enemy, whom the original Acacius insisted must be killed. Has black hair, slitted red eyes, and long gold earrings. He seems to have some unimaginable secrets hidden in his past. He intends to kill Acacius in two years.
 

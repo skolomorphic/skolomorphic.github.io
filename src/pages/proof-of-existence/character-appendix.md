@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "Character Appendix"
 chapter: 0
-lastEdit: 2025-06-21
+lastEdit: 2025-08-02
 collectionName: 'proofOfExistence'
 ---
 This page contains spoilers up to the most recent chapter. 
@@ -45,9 +45,13 @@ This page contains spoilers up to the most recent chapter.
 
 **Rhoswen:** Acacius’ classmate. A sleepy girl with unknown skills and long, auburn hair. 
 
+**Roxana:** A lavender-haired girl with downturned eyes and a propensity for being fake. She is a priestess of the Dragon Shrine with great skill in healing and a notable knowledge of the world.
+
 **Sacha Reviance:** Luka’s teacher, and a powerful personage. A fair woman with long, pale hair, and prone to making people uncomfortable for her own amusement. Though they share the same last name, she is not related to Luka by blood. 
 
 **Thais:** A bartender with light skin and a wild mane of blond hair. She is Etienne’s friend. 
+
+**Verica (Veric):** A quiet girl who wears a male school uniform. She has pale skin, freckles, and long silver-blue hair combed back and tied in a ponytail. Best friends with Luka. Deeply connected to the Dragon Shrine.
 
 **Xander Morgan:** Acacius’ classmate. A proud and combative young man with dark blue hair and a sharp military style. His Morgan family seems to deal with military matters to the North. He is in a faction opposed to the three Great Families.
 

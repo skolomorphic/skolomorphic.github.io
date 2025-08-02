@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "Jeong Eunseok's Record of Existence"
 chapter: 0
-lastEdit: 2025-03-12
+lastEdit: 2025-08-02
 collectionName: 'proofOfExistence'
 ---
 
@@ -87,4 +87,28 @@ This is not a complete record.
 > 
 > **Passive Effect:** As long as the title bearer is determined to survive, close observations of their surroundings will increase the accuracy of their danger and survival instincts. However, they will become more easily entangled in dangerous situations as well. 
 
-At the end of the Record are a number of blacked out pages.
+---
+
+## Temporary Titles
+
+### [Last Genesis of the Kaleidoscope] 
+
+> **Symbol:** Butterfly with kaleidoscope patterned wings
+> 
+> **Description:** The carrier of the legacy of the Kaleidoscope. When you died, all possibility of reviving the Kaleidoscope died with you.
+> 
+> **Passive Effect:** The power of the Kaleidoscope is vested in you. That which is “seen” must surely become true.
+
+---
+
+## Other
+
+The following titles have been mentioned but have not yet been described:
+- `[Denier of the Prison of Mind]`
+- `[Detached Performer on the Record’s Stage]`
+- `[Devotee to the Order of Signs]`
+- `[Flower in the Garden of Sin]`
+- `[Keeper of Forgotten Wrongs]`
+- `[Poison Adept]`
+
+At the end of the Record are a number of blacked out pages. When the Record is described in auditory format, these blacked-out pages are read out as, `[Due to the Record Holder’s current lack of existential power, this title cannot be expressed.]`

@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "Jeong Eunseok's Record of Existence"
 chapter: 0
-lastEdit: 2025-08-02
+lastEdit: 2025-08-14
 collectionName: 'proofOfExistence'
 ---
 
@@ -37,7 +37,7 @@ This is not a complete record.
 > **Description:** The crystallization of a certain human’s unforgiving resolve to remain “himself,” even if it meant giving up everything else. 
 > 
 > **Skill:** As well as allowing the user to take the appearance of a target, this World Proof can also take the form and imitate the skill of that target’s World Proof. The skill imitation grows closer in power to the original skill according to the user’s understanding of the target. 
-> - To take the target’s appearance, the user must know their name, and to imitate their World Proof, the user must know its name.
+> - To take the target’s appearance, the user must know their name, and to imitate their World Proof, the user must additionally know its name.
 > - The skill will be forcefully dispersed when the user lies. 
 
 ---

@@ -85,7 +85,15 @@ This is not a complete record.
 > 
 > **Description:** The results of one who has lived alongside danger and catastrophe all his life, yet escaped each time all the same, up until his chosen end. To brush by death so many times — is this unluckiness, or prescience? 
 > 
-> **Passive Effect:** As long as the title bearer is determined to survive, close observations of their surroundings will increase the accuracy of their danger and survival instincts. However, they will become more easily entangled in dangerous situations as well. 
+> **Passive Effect:** As long as the title bearer is determined to survive, close observations of their surroundings will increase the accuracy of their danger and survival instincts. However, they will become more easily entangled in dangerous situations as well.
+
+### [Keeper of Forgotten Wrongs]
+
+> **Symbol:** Black key engraved with a red eye
+> 
+> **Description:**  When the bodies were buried and evidence burned, as the powers-that-were made every effort to erase all traces of what had happened there, one person crawled out of the ashes and swore to keep that history alive forever. 
+> 
+> **Passive Effect:** The title bearer’s memories cannot be altered or erased by any powers that wish to conceal information. Hidden and forgotten matters are more likely to reach you.  
 
 ---
 
@@ -108,7 +116,6 @@ The following titles have been mentioned but have not yet been described:
 - `[Detached Performer on the Record’s Stage]`
 - `[Devotee to the Order of Signs]`
 - `[Flower in the Garden of Sin]`
-- `[Keeper of Forgotten Wrongs]`
 - `[Poison Adept]`
 
 At the end of the Record are a number of blacked out pages. When the Record is described in auditory format, these blacked-out pages are read out as, `[Due to the Record Holder’s current lack of existential power, this title cannot be expressed.]`

@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "World Glossary"
 chapter: 0
-lastEdit: 2025-03-12
+lastEdit: 2025-12-13
 collectionName: 'proofOfExistence'
 ---
 
@@ -17,25 +17,27 @@ collectionName: 'proofOfExistence'
 
 **Saivanad Empire:** Not much is known about this Empire. Raoul Sattari has made use of its rituals and skies. 
 
-## Gods
+## About the Tripartite
+
+The Tripartite are the three gods who oversee the world of Kosmonymia. Although using their power can grant great strength, it seems unwise to walk too close to the divine.
 
 ### The Scribe
 
-Rules over “history.” Their authority includes the granting of titles. 
+Rules over “history.” Their authority includes the granting and manipulation of titles. 
 
 Their symbols include the serpent that devours its tail and the knife that cuts it. 
 
 ### The Signifier
 
-Rules over appearances and “meaning.” The Great Dragon, who rules over sorrow, is a hierarch under the Signifier. 
+Rules over signs, appearances, and “meaning.” The Great Dragon, who rules over sorrow, is a hierarch under the Signifier. 
 
 Their symbols include the mask and the bow and arrow. 
 
 ### The Secret-Keeper
 
-Rules over “knowledge” and mystery.  
+Rules over knowledge and mystery.  
 
-Their symbols include the door, the seamless knot, and the dark lantern.
+Their symbols include the door, the key, the seamless knot, and the dark lantern.
 
 ### Hierarchs
-These entities govern certain domains under the member of the Tripartite that they serve. One such example is the Great Dragon, who is a Hierarch of meaning and governs sorrow.
+These entities govern certain domains under the member of the Tripartite that they serve. One such example is the Great Dragon, who is a Hierarch of meaning and governs sorrow. Not much is yet known about the other hierarchs.

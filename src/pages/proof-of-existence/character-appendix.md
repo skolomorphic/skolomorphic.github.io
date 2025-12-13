@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "Character Appendix"
 chapter: 0
-lastEdit: 2025-08-02
+lastEdit: 2025-12-13
 collectionName: 'proofOfExistence'
 ---
 This page contains spoilers up to the most recent chapter. 
@@ -10,6 +10,8 @@ This page contains spoilers up to the most recent chapter.
 **Acacius Duval:** The apparent heir to the Duval family. He seems to have had many plans in the works when he summoned Jeong Eunseok and lost everything to him. He has tan skin, rose-gold hair that is usually combed back, and sharp amber eyes. He is in a faction opposed to the three Great Families.
 
 **Bakhta Burzinski:** The school librarian. No-nonsense, but never one to look down on one’s pursuit of knowledge, wherever they might be in their journey. She has dark skin and curly gray hair, and likes floral patterns. 
+
+**Crescent Sun:** The mysterious principal of Nithemoore Academy. Powerful enough that figures like Sacha and Cyprian Duval must respect her.
 
 **Cynara Duval:** Acacius’ younger sister. Similar to Acacius, she has sharp amber eyes, but keeps her rosy locks in large twin braids. A self-proclaimed genius, and an early admit into the Academy. She has a bad relationship with Acacius for unknown reasons, and is in a faction opposed to the three Great Families.
 
@@ -47,7 +49,7 @@ This page contains spoilers up to the most recent chapter.
 
 **Roxana:** A lavender-haired girl with downturned eyes and a propensity for being fake. She is a priestess of the Dragon Shrine with great skill in healing and a notable knowledge of the world.
 
-**Sacha Reviance:** Luka’s teacher, and a powerful personage. A fair woman with long, pale hair, and prone to making people uncomfortable for her own amusement. Though they share the same last name, she is not related to Luka by blood. 
+**Sacha Reviance (Sashenka):** Luka’s teacher, and a powerful personage. A fair woman with long, pale hair, and prone to making people uncomfortable for her own amusement. Though they share the same last name, she is not related to Luka by blood. 
 
 **Thais:** A bartender with light skin and a wild mane of blond hair. She is Etienne’s friend. 
 

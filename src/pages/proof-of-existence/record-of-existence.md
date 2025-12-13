@@ -95,11 +95,21 @@ This is not a complete record.
 > 
 > **Passive Effect:** The title bearer’s memories cannot be altered or erased by any powers that wish to conceal information. Hidden and forgotten matters are more likely to reach you.  
 
+> **Title:** `[Incarnation of the Last Kaleidoscope]`
+> 
+> **Symbol:** Kalos butterfly
+> 
+> **Description:** The embodiment of the Eye of the Kaleidoscope. The one who used this power to break the circle of history is qualified to bear it. 
+> 
+> **Title Skill:** Grants the title bearer the abilities and inheritance of the `[Last Genesis of the Kaleidoscope]`. That which is “seen” must surely become true.
+> 
+> **Passive effect:** Enables the use of the kaleidoscope perspective frame at all times, even in conjunction with other frames. 
+
 ---
 
 ## Temporary Titles
 
-### [Last Genesis of the Kaleidoscope] 
+### [Last Genesis of the Kaleidoscope] (Ch19-35)
 
 > **Symbol:** Butterfly with kaleidoscope patterned wings
 > 
@@ -117,5 +127,7 @@ The following titles have been mentioned but have not yet been described:
 - `[Devotee to the Order of Signs]`
 - `[Flower in the Garden of Sin]`
 - `[Poison Adept]`
+
+A number of title tattoos were mentioned in Chapter 34.
 
 At the end of the Record are a number of blacked out pages. When the Record is described in auditory format, these blacked-out pages are read out as, `[Due to the Record Holder’s current lack of existential power, this title cannot be expressed.]`

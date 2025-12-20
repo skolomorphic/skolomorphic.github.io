@@ -50,6 +50,16 @@ This is not a complete record.
 > 
 > **Description:** The heir of Cyprian Duval will surely be called by this name. 
 
+### [Bound Prophet of the Single Path]
+
+> **Symbol:** Seamlessly knotted rope with no ends
+> 
+> **Description:** The dreamer of another future fears making great changes, lest the future slip out of control. Go forth and walk step by step to the end; dream as many variations as you like, for the destination you have envisioned will not change. But surely the small changes you accumulate will be enough to divert the path at the most critical moment. 
+> 
+> **Title Skill:** When the user sleeps, they can dream of the future, from now until a chosen future point in time. Until they reach the end date of the future that they have seen, they will not be able to dream of a different end. 
+> 
+> **Note:** Kosmonymia is watching you. 
+
 ### [Caller of What Must Be True]
 
 > **Symbol:** Black knife
@@ -69,15 +79,16 @@ This is not a complete record.
 > 
 > **Note:** This title is borrowed from the future. If you do not achieve the conditions to make it true within 2 years, you will die. 
 
-### [Bound Prophet of the Single Path]
+### [Incarnation of the Last Kaleidoscope]
 
-> **Symbol:** Seamlessly knotted rope with no ends
+> **Symbol:** Kalos butterfly
 > 
-> **Description:** The dreamer of another future fears making great changes, lest the future slip out of control. Go forth and walk step by step to the end; dream as many variations as you like, for the destination you have envisioned will not change. But surely the small changes you accumulate will be enough to divert the path at the most critical moment. 
+> **Description:** The embodiment of the Eye of the Kaleidoscope. The one who used this power to break the circle of history is qualified to bear it. 
 > 
-> **Title Skill:** When the user sleeps, they can dream of the future, from now until a chosen future point in time. Until they reach the end date of the future that they have seen, they will not be able to dream of a different end. 
+> **Title Skill:** Grants the title bearer the abilities and inheritance of the `[Last Genesis of the Kaleidoscope]`. That which is “seen” must surely become true.
 > 
-> **Note:** Kosmonymia is watching you. 
+> **Passive effect:** Enables the use of the kaleidoscope perspective frame at all times, even in conjunction with other frames. 
+
 
 ### [Inevitable Survivor of Disaster]
 
@@ -85,7 +96,9 @@ This is not a complete record.
 > 
 > **Description:** The results of one who has lived alongside danger and catastrophe all his life, yet escaped each time all the same, up until his chosen end. To brush by death so many times — is this unluckiness, or prescience? 
 > 
-> **Passive Effect:** As long as the title bearer is determined to survive, close observations of their surroundings will increase the accuracy of their danger and survival instincts. However, they will become more easily entangled in dangerous situations as well.
+> **Passive Effect:** As long as the title bearer is determined to survive, close observations of their surroundings will increase the accuracy of their danger sense and survival instincts. The title bearer possesses increased resistance to perception-warping abilities. They may also extend their perception of danger to threats against nearby friends, family, and allies, even if it does not directly threaten the title bearer. 
+> 
+> However, the title bearer will be easily entangled with dangerous situations as well.
 
 ### [Keeper of Forgotten Wrongs]
 
@@ -94,16 +107,6 @@ This is not a complete record.
 > **Description:**  When the bodies were buried and evidence burned, as the powers-that-were made every effort to erase all traces of what had happened there, one person crawled out of the ashes and swore to keep that history alive forever. 
 > 
 > **Passive Effect:** The title bearer’s memories cannot be altered or erased by any powers that wish to conceal information. Hidden and forgotten matters are more likely to reach you.  
-
-> **Title:** `[Incarnation of the Last Kaleidoscope]`
-> 
-> **Symbol:** Kalos butterfly
-> 
-> **Description:** The embodiment of the Eye of the Kaleidoscope. The one who used this power to break the circle of history is qualified to bear it. 
-> 
-> **Title Skill:** Grants the title bearer the abilities and inheritance of the `[Last Genesis of the Kaleidoscope]`. That which is “seen” must surely become true.
-> 
-> **Passive effect:** Enables the use of the kaleidoscope perspective frame at all times, even in conjunction with other frames. 
 
 ---
 

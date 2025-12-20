@@ -23,17 +23,23 @@ The Tripartite are the three gods who oversee the world of Kosmonymia. Although 
 
 ### The Scribe
 
+`[I am the circle of history and the one who breaks it.]`
+
 Rules over “history.” Their authority includes the granting and manipulation of titles. 
 
 Their symbols include the serpent that devours its tail and the knife that cuts it. 
 
 ### The Signifier
 
+`[I am the mask and the one who wears it.]`
+
 Rules over signs, appearances, and “meaning.” The Great Dragon, who rules over sorrow, is a hierarch under the Signifier. 
 
 Their symbols include the mask and the bow and arrow. 
 
 ### The Secret-Keeper
+
+`[I am the mystery and the one who reveals it.]`
 
 Rules over knowledge and mystery.  
 

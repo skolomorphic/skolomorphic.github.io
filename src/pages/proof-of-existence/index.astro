@@ -12,6 +12,7 @@ let arcSet = new Set();
 chapters.map(c => arcSet.add(c.id.split("/").at(0)));
 
 let arcToChapters = new Map();
+let arcList = [];
 arcSet.forEach(arc => {
     let arcChapters = chapters.filter(chapter => 
         chapter.id.includes(arc)
@@ -19,8 +20,10 @@ arcSet.forEach(arc => {
     let formattedArc = arc.split("-"); 
     formattedArc = formattedArc[0] + ". " + formattedArc.slice(1).join(" ");
     arcToChapters.set(formattedArc, arcChapters);
+
+    arcList.push(formattedArc);
 });
-let arcList = arcToChapters.keys().toArray().sort();
+arcList.sort();
 ---
 <BookLayout frontmatter={frontmatter}>
     <blockquote><i>In my dreams, everything was burning. A voice was calling out for me.</i></blockquote>

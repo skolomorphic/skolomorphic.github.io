@@ -2,6 +2,7 @@
 import TocNavbar from "./TocNavbar.astro"
 const { collectionName, headingsName } = Astro.props;
 ---
+<a id="skip-to-content-link" href="#maincontent">Skip to main content</a>
 <header class="topnav">
     { collectionName && 
         <div class="toc">
@@ -131,6 +132,17 @@ const { collectionName, headingsName } = Astro.props;
 #togglemenu-label {
     border-radius: 15px;
     display: inline-block;
+}
+
+/** Skip to content link */
+#skip-to-content-link {
+    position: absolute; 
+    transform: translateY(-150%);
+    top: 0;
+}
+#skip-to-content-link:focus {
+    transform: translateY(0);
+    z-index: 999;
 }
 
 @media screen and (max-width: 1100px) {

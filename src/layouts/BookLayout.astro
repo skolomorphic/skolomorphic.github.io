@@ -14,7 +14,7 @@ const collection = collectionName ? collectionName : frontmatter.collectionName;
     <script>
         import "../scripts/readerControls.js";
     </script>
-    <div class="container">
+    <div id="maincontent" class="container">
         { frontmatter.chapter != null && frontmatter.chapter > 0 && <div class="chapter-number">{frontmatter.chapter < 10 && '0'}{frontmatter.chapter}.</div> }
         <h1 class="chapter-title">{frontmatter.title}</h1>
         <div class="chapter-heading-end"></div>

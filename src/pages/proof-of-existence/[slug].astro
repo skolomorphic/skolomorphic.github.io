@@ -5,14 +5,13 @@ import BookLayout from '../../layouts/BookLayout.astro';
 export async function getStaticPaths() {
   const posts = await getCollection('proofOfExistence');
   return posts.map(post => ({
-    params: { slug: post.id }, props: { post }
+    params: { slug: post.data.chapter }, props: { post }
   }));
 }
 
 const posts = await getCollection('proofOfExistence');
 const { post } = Astro.props;
 const { Content } = await render(post);
-const chapter = Number(post.id);
 ---
 <BookLayout frontmatter={post.data} 
   postsize={posts.length} 

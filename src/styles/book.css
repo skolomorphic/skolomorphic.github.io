@@ -96,3 +96,41 @@ hr::before {
 #book-content .announcement p:first-child {
     margin-top: 0;
 }
+/* ------------ DETAIL/SPOILER CONTAINERS ----------- */
+#book-content details {
+    border-radius: 0.25rem;
+    border: 1px solid var(--accent-ultralight);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+#book-content details summary::marker {
+    display: none;
+    content: '';
+}
+#book-content details summary::after {
+    float: right;
+    content: '+';
+    font-family: 'Courier New', monospace;
+    line-height: var(--reader-line-height);
+    font-size: calc(2 * var(--reader-font-size));
+}
+#book-content details[open] summary::after {
+    float: right;
+    content: '-';
+}
+#book-content details summary {
+    background-color: var(--accent-ultralight);
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    color: var(--accent-dark);
+    cursor: pointer;
+} 
+#book-content details .detail-content {
+    padding: 1rem;
+    columns: 2;
+} 
+#book-content details .detail-chapter {
+    display: block;
+} 

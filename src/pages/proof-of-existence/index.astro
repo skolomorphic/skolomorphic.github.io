@@ -3,11 +3,24 @@ import BookLayout from "../../layouts/BookLayout.astro";
 import { getCollection } from 'astro:content';
 let frontmatter = {
     title: 'Proof of Existence',
-    lastEdit: '2025-03-12'
+    lastEdit: '2025-12-22'
 }
-const allPages = await getCollection('proofOfExistence');
-allPages.sort((a, b) => a.data.chapter - b.data.chapter);
-const arcOrganization = await getCollection('poeArcs');
+const chapters = await getCollection('proofOfExistence');
+chapters.sort((a, b) => a.data.chapter - b.data.chapter);
+
+let arcSet = new Set();
+chapters.map(c => arcSet.add(c.id.split("/").at(0)));
+
+let arcToChapters = new Map();
+arcSet.keys().forEach(arc => {
+    let arcChapters = chapters.filter(chapter => 
+        chapter.id.includes(arc)
+    );
+    let formattedArc = arc.split("-"); 
+    formattedArc = formattedArc[0] + ". " + formattedArc.slice(1).join(" ");
+    arcToChapters.set(formattedArc, arcChapters);
+});
+let arcList = arcToChapters.keys().toArray().sort();
 ---
 <BookLayout frontmatter={frontmatter}>
     <blockquote><i>In my dreams, everything was burning. A voice was calling out for me.</i></blockquote>
@@ -27,11 +40,25 @@ const arcOrganization = await getCollection('poeArcs');
     </div>
 
     <h2>Chapter Index</h2>
-    <ol>
+    <!-- <ol>
         { allPages.map((page) => 
-            <li><a href={`/proof-of-existence/${page.id}/`}>{page.data.title}</a></li>
+            <li><a href={`/proof-of-existence/${page.data.chapter}/`}>{page.data.title}</a></li>
         )}
-    </ol>
+    </ol> -->
+
+    { arcList.map(arc => 
+        <details open={(arcList.indexOf(arc) === arcList.length - 1) ? "open" : undefined}>
+            <summary>Arc {arc}</summary>
+            <div class="detail-content">
+                {arcToChapters.get(arc).map(ch => 
+                    <span class="detail-chapter">
+                        <strong>{ch.data.chapter}.</strong> 
+                        <a href={`/proof-of-existence/${ch.data.chapter}`}>{ch.data.title}</a>
+                    </span>
+                )}
+            </div>
+        </details>
+    )}
 
     <h2>Supplemental Material</h2>
     <ul>

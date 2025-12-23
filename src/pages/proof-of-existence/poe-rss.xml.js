@@ -18,13 +18,13 @@ export async function GET(context) {
         // Array of `<item>`s in output xml
         // See "Generating items" section for examples using content collections and glob imports
         items: poe.map((chapter) => ({
-            title: `Chapter ${chapter.id}: ${chapter.data.title}`,
+            title: `Chapter ${chapter.data.chapter}: ${chapter.data.title}`,
             pubDate: chapter.data.pubDate,
             // content: chapter.body,
             content: sanitizeHtml(parser.render(chapter.body), {
                 allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
             }),
-            link: `/proof-of-existence/${chapter.id}/`
+            link: `/proof-of-existence/${chapter.data.chapter}/`
         })),
         // (optional) inject custom xml
         customData: `<language>en-us</language>`,

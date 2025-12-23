@@ -24,7 +24,7 @@ collection.sort((a, b) => a.data.chapter - b.data.chapter);
             <h3>Table of Contents</h3>
                 <a href={`../`}>Index</a>
             { collection.map((page) => 
-                <a href={`/proof-of-existence/${page.id}/`}>{page.data.title}</a>
+                <a href={`/proof-of-existence/${page.data.chapter}/`}>{page.data.title}</a>
             )}
         </div>
     </div>

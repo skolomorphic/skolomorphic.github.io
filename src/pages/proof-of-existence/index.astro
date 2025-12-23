@@ -53,7 +53,7 @@ let arcList = arcToChapters.keys().toArray().sort();
                 {arcToChapters.get(arc).map(ch => 
                     <span class="detail-chapter">
                         <strong>{ch.data.chapter}.</strong> 
-                        <a href={`/proof-of-existence/${ch.data.chapter}`}>{ch.data.title}</a>
+                        <a href={`/proof-of-existence/${ch.data.chapter}/`}>{ch.data.title}</a>
                     </span>
                 )}
             </div>

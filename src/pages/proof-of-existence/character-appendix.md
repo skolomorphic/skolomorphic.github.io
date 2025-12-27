@@ -2,12 +2,14 @@
 layout: "../../layouts/BookLayout.astro"
 title: "Character Appendix"
 chapter: 0
-lastEdit: 2025-12-13
+lastEdit: 2025-12-27
 collectionName: 'proofOfExistence'
 ---
 This page contains spoilers up to the most recent chapter. 
 
 **Acacius Duval:** The apparent heir to the Duval family. He seems to have had many plans in the works when he summoned Jeong Eunseok and lost everything to him. He has tan skin, rose-gold hair that is usually combed back, and sharp amber eyes. He is in a faction opposed to the three Great Families.
+
+**Artunis Sattari:** The Chief of the Ministry of Security and Investigation. A woman who is used to getting her way. She is a tall individual with ice-blue eyes and shoulder-length black hair, and she is usually dressed in uniform, equipped with batons and firearms. Her relationship with Raoul Sattari is fraught. 
 
 **Bakhta Burzinski:** The school librarian. No-nonsense, but never one to look down on one’s pursuit of knowledge, wherever they might be in their journey. She has dark skin and curly gray hair, and likes floral patterns. 
 

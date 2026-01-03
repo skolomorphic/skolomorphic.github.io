@@ -36,6 +36,9 @@
                 
                 // Split CSV data into rows
                 const rows = data.split('\n').slice(1); // Skip header row
+
+                // console.log("rows:", rows);
+                // console.log("pagePath:", pagePath);
                 
                 // Count rows that match the current page path
                 const pageCount = rows.filter(row => row.includes(pagePath)).length;

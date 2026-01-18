@@ -105,10 +105,6 @@ hr::before {
     margin-bottom: 1rem;
 }
 #book-content details a {
-    border-radius: 0.25rem;
-    border: 1px solid var(--accent-ultralight);
-    overflow: hidden;
-    margin-bottom: 1rem;
     text-decoration: none;
 }
 #book-content details summary::marker {

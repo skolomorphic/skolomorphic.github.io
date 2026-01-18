@@ -39,6 +39,7 @@
     font-weight: 700;
     font-size: 3rem;
     font-variant: normal;
+    text-transform: capitalize;
 }
 .chapter-heading-end {
     margin: 30px auto 60px;
@@ -103,6 +104,13 @@ hr::before {
     overflow: hidden;
     margin-bottom: 1rem;
 }
+#book-content details a {
+    border-radius: 0.25rem;
+    border: 1px solid var(--accent-ultralight);
+    overflow: hidden;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
 #book-content details summary::marker {
     display: none;
     content: '';
@@ -134,3 +142,7 @@ hr::before {
 #book-content details .detail-chapter {
     display: block;
 } 
+/* ------------ TAGS ----------- */
+.tag-link {
+    text-transform: capitalize;
+}

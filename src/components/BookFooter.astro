@@ -13,7 +13,7 @@ const date = new Date(frontmatter.lastEdit).toUTCString().slice(0, 16); //.toLoc
     { frontmatter.tags && 
         <p><span class="label">Tags:</span> 
             {frontmatter.tags.map((character: any) => 
-                <span class="tag">{character}</span> 
+                <a class="tag" href={`/proof-of-existence/tags/${character}/`}>{character}</a> 
             )}
         </p>
     }
@@ -44,6 +44,7 @@ const date = new Date(frontmatter.lastEdit).toUTCString().slice(0, 16); //.toLoc
     border-radius: 2px;
     box-shadow: 5px 5px var(--accent-dark);
     color: var(--accent-dark);
+    text-decoration: none;
 }
 .tag:hover {
     background-color: var(--accent-dark);

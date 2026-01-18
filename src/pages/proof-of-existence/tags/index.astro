@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import BookLayout from '../../../layouts/BookLayout.astro';
+
+const posts = await getCollection('proofOfExistence');
+
+const uniqueTags = [...new Set(posts.map((post: any) => post.data?.tags).flat())];
+const tags = Array.from(uniqueTags).sort();
+
+const frontmatter = {
+    chapter: 0,
+    title: `Browse Tags`
+}
+---
+<BookLayout
+  frontmatter={frontmatter}
+  postsize={posts.length} 
+  collectionName="proofOfExistence"
+  headingsName="poeArcs" >
+
+    <ul style="columns: 2;">
+        {tags.map(tag => 
+            <li>
+                <a class="tag-link" href={`/proof-of-existence/tags/${tag}/`}>{tag}</a>
+            </li>
+        )}
+    </ul>
+    
+</BookLayout>

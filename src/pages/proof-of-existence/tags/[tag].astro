@@ -1,0 +1,43 @@
+---
+import { getCollection, render } from 'astro:content';
+import BookLayout from '../../../layouts/BookLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('proofOfExistence');
+
+  const uniqueTags = [...new Set(posts.map((post: any) => post.data?.tags).flat())];
+  return uniqueTags.map((tag) => ({
+    params: { 
+        tag: tag 
+    }, 
+    props: { 
+        posts: posts.filter((post: any) => post.data.tags?.includes(tag)) 
+    }
+  }));
+}
+
+const { posts } = Astro.props;
+const { tag } = Astro.params;
+const frontmatter = {
+    chapter: 0,
+    title: `Chapters tagged "${tag}"`
+}
+---
+<BookLayout
+  frontmatter={frontmatter}
+  postsize={posts.length} 
+  collectionName="proofOfExistence"
+  headingsName="poeArcs" >
+
+    {posts.map((post: any) => 
+        <details open>
+            <summary>
+                <span class="tag-result-chapter">{post.data.chapter}.</span>
+                <a href={`/proof-of-existence/${post.data.chapter}/`}>{post.data.title}</a>
+            </summary>
+            <div class="detail-content" style="columns: 1;">
+                {post.body.slice(0, 200) + '...'}
+            </div>
+        </details>
+    )}
+</BookLayout>

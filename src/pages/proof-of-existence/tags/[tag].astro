@@ -17,6 +17,7 @@ export async function getStaticPaths() {
 }
 
 const { posts } = Astro.props;
+posts.sort((a, b) => (a.data.chapter - b.data.chapter));
 const { tag } = Astro.params;
 const frontmatter = {
     chapter: 0,

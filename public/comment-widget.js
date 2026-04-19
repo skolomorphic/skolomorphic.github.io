@@ -406,7 +406,8 @@ function createComment(data) {
     let text = document.createElement('p');
     let filteredText = data.Text;
     if (s_wordFilterOn) {filteredText = filteredText.replace(v_filteredWords, s_filterReplacement)}
-    text.innerHTML = filteredText; // DOMPurify.sanitize(filteredText); // TODO: sanitize
+    filteredText = filteredText.replaceAll(`\n`, "<br /><br />");
+    text.innerHTML = DOMPurify.sanitize(filteredText); // TODO: sanitize
     text.className = 'c-text';
     comment.appendChild(text);
     

@@ -19,7 +19,7 @@ This page contains spoilers up to the most recent chapter.
 
 **Cyprian Duval:** The Duke and patriarch of the Duval family. A powerful swordsman and commanding man with many sins under his name. He seems to be leading an underground criminal organization. Acacius and Cynara inherited their looks from him. 
 
-**Dagian Naveen:** Acacius’ classmate. Fights with light and a golden scythe. She has long, wavy, dark purple hair, and wears a gold circlet and bangles. 
+**Dagian Naveen:** Acacius’ classmate. A prodigy who can use the celestial powers of the CI frame, wielding a golden greatsword, or the Garuda and Sun paths of the EE frame. She has long, wavy, dark purple hair, and wears a gold circlet and bangles. 
 
 **Dalileh Khan:** The Practical Combat teacher and a veteran from the Rainy Wars, who earned herself the nickname "Unrelenting Storm." She uses water magic and enjoys adding aesthetic effects to her spells. A fashionable woman with dark hair, brown skin, and a wide smile. Students should address her as “Master Dalileh.” 
 
@@ -35,7 +35,7 @@ This page contains spoilers up to the most recent chapter.
 
 **Jeong Eunseok:** Our main character’s original name. 
 
-**Jules:** Acacius’ classmate. A blind girl dressed in red, with an excellent sense of style and a great interest in matters of the law. 
+**Jules:** A blind girl dressed in red, with an excellent sense of style and a great interest in matters of the law. Associated with the Seelie Court. She took a few years off before coming to Nithemore, so she is older than her peers.
 
 **Linden:** Acacius' older half-brother. A red-haired young man talented with aura and the sword. He ran away from the Duval family and found protection with the Morgans. Close with Xander and Cynara, but hates Acacius for the death of their older brother. 
 
@@ -47,7 +47,7 @@ This page contains spoilers up to the most recent chapter.
 
 **Raoul Sattari:** Acacius’ homeroom teacher. Brown skin, dark hair, brown eyes. Typically wears gold-rimmed glasses and a suit. Quiet and well-mannered, but nonetheless has a strong will. 
 
-**Rhoswen:** Acacius’ classmate. A sleepy girl with unknown skills and long, auburn hair. 
+**Rhoswen:** Acacius’ classmate. A tall girl with long, auburn hair and dark eyes. Known as the "Tamlane," she is a skilled archer with a strong affinity for the Unseelie Court and the Wild Hunt.
 
 **Roxana:** A lavender-haired girl with downturned eyes and a propensity for being fake. She is a priestess of the Dragon Shrine with great skill in healing and a notable knowledge of the world.
 

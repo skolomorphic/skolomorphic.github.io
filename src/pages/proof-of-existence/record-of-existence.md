@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "Jeong Eunseok's Record of Existence"
 chapter: 0
-lastEdit: 2025-08-14
+lastEdit: 2026-05-02
 collectionName: 'proofOfExistence'
 ---
 
@@ -69,6 +69,14 @@ This is not a complete record.
 > **Title Skill:** The title bearer can forcibly bestow whoever the knife cuts with a title borrowed from the future. The more powerful the title and the farther the future, the more vitality the title bearer must sacrifice in return. 
 > - If the target does not fulfill the requirements of the borrowed title through natural means by the time the future becomes the present, they will die. 
 
+### [Detached Performer on the Record's Stage]
+
+> **Symbol:** Silhouette emerging from stage curtains
+> 
+> **Description:** All the world is a stage, and you are merely an actor salvaging a broken play. So go ahead: laugh, cry, struggle, and rail against the world. Immerse yourself into the world that you love. But no matter what your seven emotions and six desires tell you, how could the affairs of that play have anything to do with you? 
+> 
+> **Title Skill:** When activated, changes the nature of the title holder’s emotions towards their life from “a world that is real” to “a storyline that is being played through.” 
+
 ### [Executor of the Sacrifice’s Last Will]
 
 > **Symbol:** Golden chain
@@ -126,11 +134,12 @@ This is not a complete record.
 
 The following titles have been mentioned but have not yet been described:
 - `[Denier of the Prison of Mind]`
-- `[Detached Performer on the Record’s Stage]`
 - `[Devotee to the Order of Signs]`
 - `[Flower in the Garden of Sin]`
 - `[Poison Adept]`
 
 A number of title tattoos were mentioned in Chapter 34.
+
+Eunseok has a title with a burning tree tattoo. Its first appearance was in Professor Raoul's first POV chapter, Lone Astrologer's Record (1), and its general purpose was first described during his interrogation with Artunis in Mediation (4). 
 
 At the end of the Record are a number of blacked out pages. When the Record is described in auditory format, these blacked-out pages are read out as, `[Due to the Record Holder’s current lack of existential power, this title cannot be expressed.]`

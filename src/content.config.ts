@@ -15,7 +15,9 @@ const proofOfExistence = defineCollection({
         warnings: z.array(z.string()).optional(),
         tags: z.array(z.string()).optional(),
         pubDate: z.date(),
-        lastEdit: z.date()
+        lastEdit: z.date(),
+        noticeTitle: z.string().optional(),
+        noticeContent: z.string().optional()
     })
 });
 

@@ -18,6 +18,12 @@ const collection = collectionName ? collectionName : frontmatter.collectionName;
         <h1 class="chapter-title">{frontmatter.title}</h1>
         <div class="chapter-heading-end"></div>
         <div id="book-content">
+            {frontmatter.noticeTitle && 
+                <details style="margin-bottom: calc(2 * var(--reader-line-height));">
+                    <summary>{frontmatter.noticeTitle}</summary>
+                    <div style="white-space: pre-wrap; padding: 15px;">{frontmatter.noticeContent}</div>
+                </details>
+            }
             <slot />
         </div>
         <script is:inline>

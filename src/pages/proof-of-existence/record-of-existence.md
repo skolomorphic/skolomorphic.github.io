@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "Jeong Eunseok's Record of Existence"
 chapter: 0
-lastEdit: 2026-05-02
+lastEdit: 2026-07-04
 collectionName: 'proofOfExistence'
 ---
 
@@ -39,6 +39,18 @@ This is not a complete record.
 > **Skill:** As well as allowing the user to take the appearance of a target, this World Proof can also take the form and imitate the skill of that target’s World Proof. The skill imitation grows closer in power to the original skill according to the user’s understanding of the target. 
 > - To take the target’s appearance, the user must know their name, and to imitate their World Proof, the user must additionally know its name.
 > - The skill will be forcefully dispersed when the user lies. 
+
+---
+
+## Inner World
+
+> **Inner World:** `[Bloody Seed of Paradise]`
+> 
+> **Description:** Paradise is an illusion. But throughout history, countless bodies have been buried for the sake of that damning fantasy. What is the difference between the one who chases paradise, and the one who strikes it down?
+> 
+> **Core Phenomenon:** Once a day, cast and witness an illusion that shows the target’s dreams or the destruction thereof. Though the subjective experience may differ, the illusion will last for three seconds.
+> 
+> **Remaining trials:** 3
 
 ---
 
@@ -87,6 +99,20 @@ This is not a complete record.
 > 
 > **Note:** This title is borrowed from the future. If you do not achieve the conditions to make it true within 2 years, you will die. 
 
+### [Face Changer With the Hidden Knife]
+> **Symbol:** Knife behind a Yeongno mask
+> 
+> **Description:** The one who bore the grievances of the people and raged against the powerful must have been a monster. But everyone had grievances, and anyone could act. Which smiling face would be the next to reveal the mask? The monster will never die so long as the people are alive.
+> 
+> **Active Skill:** Due to insufficient existential power, the effects cannot be expressed.
+> 
+> **Passive Skill:** The title holder naturally belongs wherever people hold grievances in their hearts. Encourages others to accept and overlook any doubts about the title holder’s presence and identity.
+> - The skill is more effective against those with heavy “karma,” but may induce an additional sense of paranoia.
+> - The skill’s effects will end if the title holder shows hostility or breaches the target’s cognitive threshold of suspicion.
+> - Due to insufficient existential power, the full effects cannot be expressed.
+
+**Note:** `[Face Changer]` was formerly recorded on the blacked-out pages at the end of Eunseok's record. It is now visible after he ranked up to the Chronicle realm.
+
 ### [Incarnation of the Last Kaleidoscope]
 
 > **Symbol:** Kalos butterfly
@@ -132,14 +158,13 @@ This is not a complete record.
 
 ## Other
 
-The following titles have been mentioned but have not yet been described:
+The following titles have been mentioned but have not yet been fully described:
 - `[Denier of the Prison of Mind]`
 - `[Devotee to the Order of Signs]`
 - `[Flower in the Garden of Sin]`
 - `[Poison Adept]`
+- `[Sage of Red Dust’s Foolish Disciple]`: symbolized with a tattoo of a burning tree. Placed on the shoulder. Its first appearance was in Professor Raoul's first POV chapter, Lone Astrologer's Record (1), and its general purpose was first described during his interrogation with Artunis in Mediation (4). 
 
 A number of title tattoos were mentioned in Chapter 34.
-
-Eunseok has a title with a burning tree tattoo. Its first appearance was in Professor Raoul's first POV chapter, Lone Astrologer's Record (1), and its general purpose was first described during his interrogation with Artunis in Mediation (4). 
 
 At the end of the Record are a number of blacked out pages. When the Record is described in auditory format, these blacked-out pages are read out as, `[Due to the Record Holder’s current lack of existential power, this title cannot be expressed.]`

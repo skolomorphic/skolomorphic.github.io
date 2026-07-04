@@ -142,3 +142,8 @@ hr::before {
 .tag-link {
     text-transform: capitalize;
 }
+/*------------- LIST ----------- */
+ul {
+    margin-top: 0;
+    margin-bottom: var(--reader-p-spacing);
+}

@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "World Glossary"
 chapter: 0
-lastEdit: 2025-12-27
+lastEdit: 2026-06-28
 collectionName: 'proofOfExistence'
 ---
 
@@ -17,19 +17,26 @@ collectionName: 'proofOfExistence'
 
 **Saivanad Empire:** Not much is known about this Empire. Raoul Sattari has made use of its rituals and skies. 
 
-## About the Tripartite
+**Tizemitia:** A country that lies across the southern sea from Iyiria. It is the homeland of the prophet, Queen al-Sahira, and the place where Traianon the Conqueror died.
+
+## The Tripartite
 
 The Tripartite are the three gods who oversee the world of Kosmonymia. Although using their power can grant great strength, it seems unwise to walk too close to the divine.
 
 An individual member of the Tripartite is referred to as a Triarch. Each Triarch has created entities known as Hierarchs, akin to angels or demigods, that rule over part of their domain. 
 
+Each Triarch has an **emergent** and **inverted** aspect.
+
 ### The Scribe
 
 `[I am the circle of history and the one who breaks it.]`
 
-Rules over “history.” Their authority includes the granting and manipulation of titles. 
+Rules over fate and “history.” Their authority includes the granting and manipulation of titles. 
 
-Their symbols include the serpent that devours its tail and the knife that cuts it. 
+- **Inverted Aspect:** The Obliterator
+- **Symbols:** 
+  - The snake eating its own tail, symbolic of cycles/reproductions of history
+  - The knife that cuts off the snake's head, symbolic of broken cyles.
 
 #### The Scribe's Hierarchs
 
@@ -43,9 +50,13 @@ It is currently unknown how many Hierarchs of the Scribe exist.
 
 `[I am the mask and the one who wears it.]`
 
-Rules over signs, appearances, and “meaning.” 
+Rules over signs, appearances, and “meaning.” Its authorities encompass the manipulation of symbols and emotions.
 
-Their symbols include the mask and the bow and arrow. 
+- **Inverted Aspect:** The Deceiver
+- **Symbols:** 
+  - The mask
+  - The bow and arrow, often symbolic of piercing through the veil of deception
+  - The owl, as its face disc resembles a mask
 
 #### The Signifier's Hierarchs
 
@@ -57,9 +68,13 @@ Dragons can control someone’s cognition to affect how strongly an emotion is a
 
 `[I am the mystery and the one who reveals it.]`
 
-Rules over knowledge and mystery.  
+Rules over knowledge and mystery. Its authorities include the processes by which knowledge is discovered and formed. It also rules over all that is unknown, including the "final mystery," death. In the Tripartite's symbolism, true death is also known as "passing through the final door." 
 
-Their symbols include the door, the key, the seamless knot, and the dark lantern.
+- **Inverted Aspect:** The Betrayer
+- **Symbols:** 
+  - The key and door, representing knowledge that can be reached
+  - The seamless knot, representing mysteries that can't be unraveled
+  - The dark lantern, related to concealment and revelation
 
 #### The Secret-Keeper's Hierarchs 
 
@@ -68,3 +83,13 @@ The Secret-Keeper's Hierarchs are the Phoenix of Observation, the Phoenix of Rea
 Because they affect aspects of knowledge, they are difficult to spot and track. The Phoenix of Observation, for instance, can control any sense that directly gathers information from the outside world. 
 
 If the phoenixes don’t want to be perceived, they won’t be, but they occasionally interfere with the world’s affairs on a whim. 
+
+## Notable Figures in History
+
+**Helene de Foix:** The `[Palacemaker of Marionettes]`. She could create marionettes so life-like they could replace the real person without anyone noticing a thing. During a time of political turmoil, her marionettes ended up replacing most of the Lemirian court. 
+
+**Queen al-Sahira:** A Myth-level Tizemitian queen, famous for her prophetic abilities and her dying curse. Her title, `[Blood Omen that Connects the End to the Beginning]`, carries her curse on to this day, killing anyone who forcefully exposes a prophet to the world. 
+
+**Sverrir Morgan:** The `[Tyrant who Gouged Out the Heart of the North]` who created the Morgan family's legacy, the `[Mirror of Reason’s Frozen Sword]` - a sword art that consumes the user’s emotions to grant them greater power. 
+
+**Traianon the Conqueror:** A famous Myth-level figure who led the battle that killed Queen al-Sahira. His Inner World was grown from the `[Seed of Unending Conquest]`. According to the legends, in a gambit to overcome al-Sahira's curse, he challenged the Tripartite's domains of "fate" and "death," to which they challenged him to enter the "final door" and then return.

@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "Character Appendix"
 chapter: 0
-lastEdit: 2025-12-27
+lastEdit: 2026-07-04
 collectionName: 'proofOfExistence'
 ---
 This page contains spoilers up to the most recent chapter. 

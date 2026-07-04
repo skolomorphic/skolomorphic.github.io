@@ -2,7 +2,7 @@
 layout: "../../layouts/BookLayout.astro"
 title: "World Glossary"
 chapter: 0
-lastEdit: 2026-06-28
+lastEdit: 2026-07-04
 collectionName: 'proofOfExistence'
 ---
 

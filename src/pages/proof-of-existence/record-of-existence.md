@@ -48,7 +48,7 @@ This is not a complete record.
 > 
 > **Description:** Paradise is an illusion. But throughout history, countless bodies have been buried for the sake of that damning fantasy. What is the difference between the one who chases paradise, and the one who strikes it down?
 > 
-> **Core Phenomenon:** Once a day, cast and witness an illusion that shows the target’s dreams or the destruction thereof. Though the subjective experience may differ, the illusion will last for three seconds.
+> **Core Phenomenon:** Once a day, cast and witness an illusion that traps the target in an illusion of their dreams or the destruction thereof. Though the witnesses’ subjective experience may differ, the illusion will last for three seconds.
 > 
 > **Remaining trials:** 3
 
@@ -81,6 +81,16 @@ This is not a complete record.
 > **Title Skill:** The title bearer can forcibly bestow whoever the knife cuts with a title borrowed from the future. The more powerful the title and the farther the future, the more vitality the title bearer must sacrifice in return. 
 > - If the target does not fulfill the requirements of the borrowed title through natural means by the time the future becomes the present, they will die. 
 
+### [Denier of the Prison of Mind]
+
+> **Symbol/Manifestation:** Bird cage
+>
+> **Description:** The mind constructs the world to understand the world. The construct separates the mind from the world. The chick breaks out of the egg, and the egg is the world. Destroy that which imprisons you, and yourself with it.
+> 
+> **Title Skill:** Mitigates the rules of another’s world on the title holder if their world’s name or three sources can be identified. Mitigates spirits’ effects on the title holder if the spirit’s core title or three auxiliary titles can be identified. The degree of mitigation increases with knowledge of the target.
+> 
+> **Note:** A special reward to the one who destroyed their own framework of mind and abandoned the trodden path completely, unwilling to be bound by limits of the Inner World that was seen. He who wishes to change must reject the constructs by which he lives. Perhaps, however, the space outside the cage is also a cage.
+
 ### [Detached Performer on the Record's Stage]
 
 > **Symbol:** Silhouette emerging from stage curtains
@@ -93,11 +103,11 @@ This is not a complete record.
 
 > **Symbol:** Golden chain
 > 
-> **Description:** A title obtained by carrying out the last will of those who died or were killed unjustly in pursuit of a greater cause. Of those you’ve met most recently, only Acacius Duval fits the conditions.
+> **Description:** A title obtained by carrying out the last will of those who died or were killed unjustly in pursuit of a greater cause. Of those you’ve met most recently, only Acacius Duval and the `[Last Genesis of the Kaleidoscope]` fit the conditions.
 > 
 > **Passive Effect:** You have an affinity for certain voices of the dead. 
 > 
-> **Note:** This title is borrowed from the future. If you do not achieve the conditions to make it true within 2 years, you will die. 
+> **Note:** This title is borrowed from the future. If you do not achieve the conditions to make it true within 1 year and 10 months, you will die. 
 
 ### [Face Changer With the Hidden Knife]
 > **Symbol:** Knife behind a Yeongno mask
@@ -159,7 +169,6 @@ This is not a complete record.
 ## Other
 
 The following titles have been mentioned but have not yet been fully described:
-- `[Denier of the Prison of Mind]`
 - `[Devotee to the Order of Signs]`
 - `[Flower in the Garden of Sin]`
 - `[Poison Adept]`
